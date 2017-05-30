@@ -1,0 +1,22 @@
+F:/hdl_projects/rangefinder/Rangefinder_kit/SIM/comp_reset/tb_com_reset.v {1 {vlog -work work F:/hdl_projects/rangefinder/Rangefinder_kit/SIM/comp_reset/tb_com_reset.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module tb_comp_reset_gen
+
+Top level modules:
+	tb_comp_reset_gen
+
+} {} {}} F:/hdl_projects/rangefinder/Rangefinder_kit/SIM/comp_reset/com_reset_generator.v {1 {vlog -work work F:/hdl_projects/rangefinder/Rangefinder_kit/SIM/comp_reset/com_reset_generator.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module comp_reset_generator
+
+Top level modules:
+	comp_reset_generator
+
+} {} {}} F:/hdl_projects/rangefinder/Rangefinder_kit/SIM/comp_reset/pulse_cross_domain.v {1 {vlog -work work F:/hdl_projects/rangefinder/Rangefinder_kit/SIM/comp_reset/pulse_cross_domain.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module pulse_cross_domain
+
+Top level modules:
+	pulse_cross_domain
+
+} {} {}}

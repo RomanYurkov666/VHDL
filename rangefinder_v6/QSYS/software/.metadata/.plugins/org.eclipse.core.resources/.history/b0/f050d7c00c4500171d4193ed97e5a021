@@ -1,0 +1,39 @@
+/*
+ * indication.c
+ *
+ *  Created on: 30.05.2017
+ *      Author: user
+ */
+
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+
+#define LED_PIN_BIT 0x8 //3 bit
+
+typedef enum
+{
+	led_on = 0x1,
+	led_off = 0x0
+} t_led_states;
+
+void indication()
+{
+	static alt_u16 led_period_divider = 0;
+	led_period_divider++;
+	if (led_period_divider==250)
+	{
+		led_period_divider=0;
+		set_led_state();
+	}
+}
+
+void set_led_state(alt_u8 state)
+{
+	alt_u32 buf = 0;
+	if (state)
+		buf|=LED_PIN_BIT;
+	else
+		buf&=(~LED_PIN_BIT);
+	IOWR_ALTERA_AVALON_PIO_DATA(LEDS_PORT_BASE,buf);
+
+}

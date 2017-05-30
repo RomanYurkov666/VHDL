@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+<file path="hdl_sim/rangefinder_sopc_ram_cpu.dat" type="DAT" initParamName="INIT_FILE" memoryPath="ram_cpu" />
+<file path="hdl_sim/rangefinder_sopc_ram_sample_0.dat" type="DAT" initParamName="INIT_FILE" memoryPath="ram_sample_0" />
+<file path="hdl_sim/rangefinder_sopc_ram_sample_1.dat" type="DAT" initParamName="INIT_FILE" memoryPath="ram_sample_1" />
+<file path="hdl_sim/rangefinder_sopc_ram_sample_2.dat" type="DAT" initParamName="INIT_FILE" memoryPath="ram_sample_2" />
+<file path="hdl_sim/rangefinder_sopc_ram_sample_3.dat" type="DAT" initParamName="INIT_FILE" memoryPath="ram_sample_3" />
+<file path="hdl_sim/rangefinder_sopc_ram_sample_4.dat" type="DAT" initParamName="INIT_FILE" memoryPath="ram_sample_4" />
+<file path="hdl_sim/rangefinder_sopc_ram_sample_5.dat" type="DAT" initParamName="INIT_FILE" memoryPath="ram_sample_5" />
+<file path="rangefinder_sopc_ram_cpu.hex" type="HEX" initParamName="INIT_FILE" memoryPath="ram_cpu" />
+<file path="rangefinder_sopc_ram_sample_0.hex" type="HEX" initParamName="INIT_FILE" memoryPath="ram_sample_0" />
+<file path="rangefinder_sopc_ram_sample_1.hex" type="HEX" initParamName="INIT_FILE" memoryPath="ram_sample_1" />
+<file path="rangefinder_sopc_ram_sample_2.hex" type="HEX" initParamName="INIT_FILE" memoryPath="ram_sample_2" />
+<file path="rangefinder_sopc_ram_sample_3.hex" type="HEX" initParamName="INIT_FILE" memoryPath="ram_sample_3" />
+<file path="rangefinder_sopc_ram_sample_4.hex" type="HEX" initParamName="INIT_FILE" memoryPath="ram_sample_4" />
+<file path="rangefinder_sopc_ram_sample_5.hex" type="HEX" initParamName="INIT_FILE" memoryPath="ram_sample_5" />
+</simPackage>

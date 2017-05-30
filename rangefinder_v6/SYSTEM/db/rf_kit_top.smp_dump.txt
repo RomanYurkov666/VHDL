@@ -1,0 +1,48 @@
+
+State Machine - |rf_kit_top|comp_reset_generator:comp_rst_gen|state
+Name state.st_idle state.st_active state.st_delay 
+state.st_idle 0 0 0 
+state.st_delay 1 0 1 
+state.st_active 1 1 0 
+
+State Machine - |rf_kit_top|rangefinder_sopc:sopc|stepper_controller:stepper_iris|state
+Name state.ST_IDLE state.ST_LIMITED_MOV state.ST_UNLIMITED_MOV 
+state.ST_IDLE 0 0 0 
+state.ST_UNLIMITED_MOV 1 0 1 
+state.ST_LIMITED_MOV 1 1 0 
+
+State Machine - |rf_kit_top|rangefinder_sopc:sopc|stepper_controller:stepper_atten|state
+Name state.ST_IDLE state.ST_LIMITED_MOV state.ST_UNLIMITED_MOV 
+state.ST_IDLE 0 0 0 
+state.ST_UNLIMITED_MOV 1 0 1 
+state.ST_LIMITED_MOV 1 1 0 
+
+State Machine - |rf_kit_top|rangefinder_sopc:sopc|spi_controller:spi_apd|state
+Name state.ST_LOAD_RX_DATA state.ST_TRANSACTION state.ST_CONFIG state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 
+state.ST_CONFIG 0 0 1 1 
+state.ST_TRANSACTION 0 1 0 1 
+state.ST_LOAD_RX_DATA 1 0 0 1 
+
+State Machine - |rf_kit_top|rangefinder_sopc:sopc|spi_controller:spi_vga|state
+Name state.ST_LOAD_RX_DATA state.ST_TRANSACTION state.ST_CONFIG state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 
+state.ST_CONFIG 0 0 1 1 
+state.ST_TRANSACTION 0 1 0 1 
+state.ST_LOAD_RX_DATA 1 0 0 1 
+
+State Machine - |rf_kit_top|rangefinder_sopc:sopc|spi_controller:spi_tdc|state
+Name state.ST_LOAD_RX_DATA state.ST_TRANSACTION state.ST_CONFIG state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 
+state.ST_CONFIG 0 0 1 1 
+state.ST_TRANSACTION 0 1 0 1 
+state.ST_LOAD_RX_DATA 1 0 0 1 
+
+State Machine - |rf_kit_top|rangefinder_sopc:sopc|rangefinder_sopc_cpu:cpu|rangefinder_sopc_cpu_nios2_oci:the_rangefinder_sopc_cpu_nios2_oci|rangefinder_sopc_cpu_jtag_debug_module_wrapper:the_rangefinder_sopc_cpu_jtag_debug_module_wrapper|rangefinder_sopc_cpu_jtag_debug_module_tck:the_rangefinder_sopc_cpu_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

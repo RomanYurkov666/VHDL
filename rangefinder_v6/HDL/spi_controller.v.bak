@@ -1,0 +1,128 @@
+module spi_controller
+(
+//avalon mm
+input avmm_reset,
+input avmm_clk,
+//input avmm_cs,
+//input [2:0] avmm_addr,
+//input avmm_write
+//input [31:0] avmm_writedata,
+//input avmm_read,
+//output reg [31:0] avmm_readdata,
+input start,
+input clock_polarity,
+input clock_phase,
+input [7:0] spi_data_length,
+input [7:0] clock_divider,
+input [31:0] transmitter_data,
+output [31:0] receiver_data,
+//spi
+output spi_clk,
+output spi_cs_n,
+output spi_mosi,
+input spi_miso
+);
+
+localparam ST_IDLE = 3'd0;
+localparam ST_CONFIG = 3'd1;
+localparam ST_WAIT = 3'd2;
+localparam ST_TRANSACTION = 3'd3;
+localparam ST_READ_DATA = 3'd4;
+
+wire spi_clk_en;
+wire transmitter_en;
+wire receiver_en;
+wire tx_complete;
+wire load_tx_data;
+wire start_transaction;
+
+reg [2:0] state = ST_IDLE;
+reg [2:0] next_state = ST_IDLE;
+
+assign load_tx_data = (state == ST_CONFIG);
+assign start_transaction = (next_state == ST_TRANSACTION);
+//fsm
+always@ (posedge avmm_clk)
+		if (avmm_reset)
+			state<=ST_IDLE;
+		else
+			state<=next_state;
+
+always@ (*)
+		begin
+		next_state=ST_IDLE;
+		case (state)
+		ST_IDLE: begin
+		if (start)
+		next_state=ST_CONFIG;
+		else
+		next_state=ST_IDLE;
+		end
+		ST_CONFIG: begin
+		next_state=ST_WAIT;
+		end 
+		ST_WAIT: begin
+		if (spi_clk_en)
+		next_state=ST_TRANSACTION;
+		else
+		next_state=ST_WAIT;
+		end 
+		ST_TRANSACTION: begin
+		if (tx_complete)
+		next_state=ST_READ_DATA;
+		else
+		next_state=ST_TRANSACTION;
+		end
+		ST_READ_DATA: begin
+		next_state=ST_IDLE;
+		end
+		default: begin
+		next_state=ST_IDLE
+		end 
+		endcase 
+		end 
+			
+spi_clk_divider u0
+(
+	.clk(avmm_clk),
+	.reset(avmm_reset),
+	.divider(clock_divider),
+	.slow_clk_en(spi_clk_en)
+);
+
+spi_tx_shifter u1
+(
+	.clk(avmm_clk),
+	.reset(avmm_reset),
+	.tx_data(transmitter_data),
+	.tx_shifter_load(load_tx_data),
+	.tx_shift_en(transmitter_en),
+	.spi_mosi(spi_mosi)
+);
+
+spi_rx_shifter u2
+(
+	.clk(avmm_clk),
+	.reset(avmm_reset),
+	.rx_data(receiver_data),
+	.rx_shift_en(receiver_en),
+	.spi_miso(spi_miso)
+);
+
+spi_clk_cs_generator u3
+(
+	.clk(avmm_clk),
+	.reset(avmm_reset),
+	.slow_clk_en(spi_clk_en),
+	.start_transaction(start_transaction), 
+	.spi_clk_polarity(clock_polarity),
+	.spi_clk_phase(clock_phase),
+	.data_len(spi_data_length),
+	.spi_cs(spi_cs_n),
+	.spi_clk(spi_clk),
+	.tx_shift_en(transmitter_en),
+	.rx_shift_en(receiver_en),
+	.transfer_complete(tx_complete)
+);
+
+endmodule 

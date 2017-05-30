@@ -1,0 +1,105 @@
+/*
+ * sample_recorder.c
+ *
+ *  Created on: 29.05.2017
+ *      Author: user
+ */
+
+#include "system.h"
+#include "io.h"
+#include "sample_recorder.h"
+#include "time.h"
+#include "string.h"
+
+t_sample_recorder_config sr_config;
+t_recording_channel adc_channel[6];
+
+void config_sample_recorder(t_sample_recorder_config* c);
+
+void init_sample_recorder()
+{
+	alt_16 i = 0;
+
+	sr_config.config_base = SAMPLE_RECORDER_AVALON_SLAVE_BASE;
+	sr_config.ram_base = SAMPLE_RECORDER_AVALON_SLAVE_1_BASE;
+
+	sr_config.start_recording=0;
+	sr_config.stop_recording=0;
+	sr_config.complete=0;
+	sr_config.start_loading_to_ram=0;
+
+	sr_config.active_channel=0x0;
+	sr_config.recording_delay=64;
+
+	sr_config.trigger_direction=trigger_posedge;
+	sr_config.trigger_source=internal_comparator;
+	sr_config.trigger_threshold=DEFAULT_COMPARATOR_LEVEL;
+
+	config_sample_recorder(&sr_config);
+
+	for (i=0;i<6;i++)
+	{
+		adc_channel[i].amplitude=0x0;
+		adc_channel[i].distance=0x0;
+		adc_channel[i].pulse_detected=0x0;
+		adc_channel[i].sample_len=0x0;
+		adc_channel[i].timestamp=0x0;
+		adc_channel[i].width=0x0;
+		memset(adc_channel[i].sample,0,sizeof(adc_channel[i].sample));
+	}
+}
+
+void config_sample_recorder(t_sample_recorder_config* c)
+{
+	alt_u32 wdata = 0x0;
+	//control_1_reg
+	if (c->start_recording)
+	{
+		c->start_recording=0; //reset flag
+		IOWR(c->config_base,control_1_reg,0x1); //start pulse
+	}
+	if (c->stop_recording)
+	{
+		c->stop_recording=0; //reset flag
+		IOWR(c->config_base,control_1_reg,0x0); //stop pulse
+	}
+
+	//control_0_reg
+	wdata |= ((alt_u32)sr_config.trigger_threshold)<<TRIGGER_THRESHOLD_OFFSET;
+	wdata |= ((alt_u32)sr_config.recording_delay)<<RECORDING_DELAY_OFFSET;
+	wdata |= ((alt_u32)sr_config.active_channel)<<ACTIVE_CHANNEL_SET_OFFSET;
+	wdata |= (sr_config.complete)?COMPLETE_RECORD_BIT:0x0;
+	wdata |= (sr_config.start_loading_to_ram)?LOAD_DATA_TO_RAM_BIT:0x0;
+	wdata |= (sr_config.trigger_direction)?TRIGGER_DIRECTION_BIT:0x0;
+	wdata |= (sr_config.trigger_source)?TRIGGER_SOURCE_BIT:0x0;
+	IOWR(c->config_base,control_0_reg,wdata);
+
+	sr_config.start_loading_to_ram=0; //reset flag
+	sr_config.complete=0; //reset flag
+}
+
+void read_sample (alt_u8 sample_num)
+{
+	alt_16 i = 0;
+	alt_u32 *ptr_32bit = NULL;
+	alt_u32 status = 0x0;
+
+	//read sample from fifo
+	sr_config.active_channel = sample_num;
+	config_sample_recorder(&sr_config);
+	sr_config.start_loading_to_ram = 1;
+	config_sample_recorder(&sr_config);
+	simple_delay(2000);
+
+	ptr_32bit=(alt_u32*)adc_channel[sample_num].sample;
+	for (i=0;i<64;i++)
+	{
+		ptr_32bit[i]=IORD(sr_config.ram_base,i);
+	}
+
+	//read channel data from registers
+	status = IORD(sr_config.config_base,sample_num+3);
+	adc_channel[sample_num].pulse_detected=status&0x1;
+	adc_channel[sample_num].sample_len=(status>>1)&0xff;
+	adc_channel[sample_num].timestamp=status>>9;
+}

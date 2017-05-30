@@ -1,0 +1,244 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=E:\HDL_projects\rangefinder\rangefinder_v6\QSYS --output-directory=E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc --report-file=bsf:E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc\rangefinder_sopc.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc.qsys
+Progress: Loading QSYS/rangefinder_sopc.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 14.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_qsys 14.0]
+Progress: Parameterizing module cpu
+Progress: Adding ram_cpu [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_cpu
+Progress: Adding sys_id [altera_avalon_sysid_qsys 14.0]
+Progress: Parameterizing module sys_id
+Progress: Adding sys_timer [altera_avalon_timer 14.0]
+Progress: Parameterizing module sys_timer
+Progress: Adding pc_uart [altera_avalon_uart 14.0]
+Progress: Parameterizing module pc_uart
+Progress: Adding leds_port [altera_avalon_pio 14.0]
+Progress: Parameterizing module leds_port
+Progress: Adding i2c_port [altera_avalon_pio 14.0]
+Progress: Parameterizing module i2c_port
+Progress: Adding ram_sample_0 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_0
+Progress: Adding ram_sample_1 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_1
+Progress: Adding ram_sample_2 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_2
+Progress: Adding ram_sample_3 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_3
+Progress: Adding ram_sample_4 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_4
+Progress: Adding ram_sample_5 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_5
+Progress: Adding laser_driver [laser_driver 1.0]
+Progress: Parameterizing module laser_driver
+Progress: Adding sample_loader [sample_loader 1.0]
+Progress: Parameterizing module sample_loader
+Progress: Adding spi_tdc [spi_controller 1.0]
+Progress: Parameterizing module spi_tdc
+Progress: Adding pulse_generator [pulse_generator 1.0]
+Progress: Parameterizing module pulse_generator
+Progress: Adding spi_vga [spi_controller 1.0]
+Progress: Parameterizing module spi_vga
+Progress: Adding rs485_de [altera_avalon_pio 14.0]
+Progress: Parameterizing module rs485_de
+Progress: Adding tdc_enable [altera_avalon_pio 14.0]
+Progress: Parameterizing module tdc_enable
+Progress: Adding service_timer [altera_avalon_timer 14.0]
+Progress: Parameterizing module service_timer
+Progress: Adding spi_apd [spi_controller 1.0]
+Progress: Parameterizing module spi_apd
+Progress: Adding system_mode [altera_avalon_pio 14.0]
+Progress: Parameterizing module system_mode
+Progress: Adding amp_gain [altera_avalon_pio 14.0]
+Progress: Parameterizing module amp_gain
+Progress: Adding apd_overcurrent [altera_avalon_pio 14.0]
+Progress: Parameterizing module apd_overcurrent
+Progress: Adding stepper_atten [stepper_controller 2.0]
+Progress: Parameterizing module stepper_atten
+Progress: Adding stepper_iris [stepper_controller 2.0]
+Progress: Parameterizing module stepper_iris
+Progress: Adding laser_charge [laser_driver 1.0]
+Progress: Parameterizing module laser_charge
+Progress: Adding tdc_start_pulse_gen [laser_driver 1.0]
+Progress: Parameterizing module tdc_start_pulse_gen
+Progress: Adding sample_recorder [sample_recorder 1.0]
+Progress: Parameterizing module sample_recorder
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: rangefinder_sopc.cpu: Please note that for early evaluation, preview versions of new Nios II Gen2 Processors are available with this release.
+Info: rangefinder_sopc.sys_id: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: rangefinder_sopc.sys_id: Time stamp will be automatically updated when this component is generated.
+Info: rangefinder_sopc.i2c_port: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: rangefinder_sopc.apd_overcurrent: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=E:\HDL_projects\rangefinder\rangefinder_v6\QSYS --output-directory=E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc\synthesis --file-set=QUARTUS_SYNTH --report-file=html:E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc\rangefinder_sopc.html --report-file=sopcinfo:E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc.sopcinfo --report-file=cmp:E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc\rangefinder_sopc.cmp --report-file=qip:E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc\synthesis\rangefinder_sopc.qip --report-file=svd:E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc\synthesis\rangefinder_sopc.svd --report-file=regmap:E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc\synthesis\rangefinder_sopc.regmap --report-file=xml:E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc\rangefinder_sopc.xml --report-file=debuginfo:E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc\synthesis\rangefinder_sopc.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=E:\HDL_projects\rangefinder\rangefinder_v6\QSYS\rangefinder_sopc.qsys --language=VERILOG
+Progress: Loading QSYS/rangefinder_sopc.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 14.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_qsys 14.0]
+Progress: Parameterizing module cpu
+Progress: Adding ram_cpu [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_cpu
+Progress: Adding sys_id [altera_avalon_sysid_qsys 14.0]
+Progress: Parameterizing module sys_id
+Progress: Adding sys_timer [altera_avalon_timer 14.0]
+Progress: Parameterizing module sys_timer
+Progress: Adding pc_uart [altera_avalon_uart 14.0]
+Progress: Parameterizing module pc_uart
+Progress: Adding leds_port [altera_avalon_pio 14.0]
+Progress: Parameterizing module leds_port
+Progress: Adding i2c_port [altera_avalon_pio 14.0]
+Progress: Parameterizing module i2c_port
+Progress: Adding ram_sample_0 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_0
+Progress: Adding ram_sample_1 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_1
+Progress: Adding ram_sample_2 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_2
+Progress: Adding ram_sample_3 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_3
+Progress: Adding ram_sample_4 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_4
+Progress: Adding ram_sample_5 [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module ram_sample_5
+Progress: Adding laser_driver [laser_driver 1.0]
+Progress: Parameterizing module laser_driver
+Progress: Adding sample_loader [sample_loader 1.0]
+Progress: Parameterizing module sample_loader
+Progress: Adding spi_tdc [spi_controller 1.0]
+Progress: Parameterizing module spi_tdc
+Progress: Adding pulse_generator [pulse_generator 1.0]
+Progress: Parameterizing module pulse_generator
+Progress: Adding spi_vga [spi_controller 1.0]
+Progress: Parameterizing module spi_vga
+Progress: Adding rs485_de [altera_avalon_pio 14.0]
+Progress: Parameterizing module rs485_de
+Progress: Adding tdc_enable [altera_avalon_pio 14.0]
+Progress: Parameterizing module tdc_enable
+Progress: Adding service_timer [altera_avalon_timer 14.0]
+Progress: Parameterizing module service_timer
+Progress: Adding spi_apd [spi_controller 1.0]
+Progress: Parameterizing module spi_apd
+Progress: Adding system_mode [altera_avalon_pio 14.0]
+Progress: Parameterizing module system_mode
+Progress: Adding amp_gain [altera_avalon_pio 14.0]
+Progress: Parameterizing module amp_gain
+Progress: Adding apd_overcurrent [altera_avalon_pio 14.0]
+Progress: Parameterizing module apd_overcurrent
+Progress: Adding stepper_atten [stepper_controller 2.0]
+Progress: Parameterizing module stepper_atten
+Progress: Adding stepper_iris [stepper_controller 2.0]
+Progress: Parameterizing module stepper_iris
+Progress: Adding laser_charge [laser_driver 1.0]
+Progress: Parameterizing module laser_charge
+Progress: Adding tdc_start_pulse_gen [laser_driver 1.0]
+Progress: Parameterizing module tdc_start_pulse_gen
+Progress: Adding sample_recorder [sample_recorder 1.0]
+Progress: Parameterizing module sample_recorder
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: rangefinder_sopc.cpu: Please note that for early evaluation, preview versions of new Nios II Gen2 Processors are available with this release.
+Info: rangefinder_sopc.sys_id: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: rangefinder_sopc.sys_id: Time stamp will be automatically updated when this component is generated.
+Info: rangefinder_sopc.i2c_port: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: rangefinder_sopc.apd_overcurrent: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: rangefinder_sopc: Generating rangefinder_sopc "rangefinder_sopc" for QUARTUS_SYNTH
+Warning: rangefinder_sopc: "No matching role found for pc_uart:s1:dataavailable (dataavailable)"
+Warning: rangefinder_sopc: "No matching role found for pc_uart:s1:readyfordata (readyfordata)"
+Info: cpu: Starting RTL generation for module 'rangefinder_sopc_cpu'
+Info: cpu:   Generation command is [exec E:/altera/14.0/quartus/bin64/eperlcmd.exe -I E:/altera/14.0/quartus/bin64/perl/lib -I E:/altera/14.0/quartus/sopc_builder/bin/europa -I E:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I E:/altera/14.0/quartus/sopc_builder/bin -I E:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I E:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I E:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2 -I E:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2 -- E:/altera/14.0/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=rangefinder_sopc_cpu --dir=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0179_cpu_gen/ --quartus_bindir=E:/altera/14.0/quartus/bin64 --verilog --config=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0179_cpu_gen//rangefinder_sopc_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2017.05.29 21:20:15 (*) Starting Nios II generation
+Info: cpu: # 2017.05.29 21:20:15 (*)   Checking for plaintext license.
+Info: cpu: # 2017.05.29 21:20:17 (*)   Plaintext license found.
+Info: cpu: # 2017.05.29 21:20:17 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2017.05.29 21:20:17 (*)   Creating all objects for CPU
+Info: cpu: # 2017.05.29 21:20:17 (*)     Testbench
+Info: cpu: # 2017.05.29 21:20:17 (*)     Instruction decoding
+Info: cpu: # 2017.05.29 21:20:17 (*)       Instruction fields
+Info: cpu: # 2017.05.29 21:20:17 (*)       Instruction decodes
+Info: cpu: # 2017.05.29 21:20:18 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2017.05.29 21:20:18 (*)       Instruction controls
+Info: cpu: # 2017.05.29 21:20:18 (*)     Pipeline frontend
+Info: cpu: # 2017.05.29 21:20:18 (*)     Pipeline backend
+Info: cpu: # 2017.05.29 21:20:20 (*)   Generating RTL from CPU objects
+Info: cpu: # 2017.05.29 21:20:20 (*)   Creating plain-text RTL
+Info: cpu: # 2017.05.29 21:20:24 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'rangefinder_sopc_cpu'
+Info: cpu: "rangefinder_sopc" instantiated altera_nios2_qsys "cpu"
+Info: ram_cpu: Starting RTL generation for module 'rangefinder_sopc_ram_cpu'
+Info: ram_cpu:   Generation command is [exec E:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I E:/altera/14.0/quartus/bin64/perl/lib -I E:/altera/14.0/quartus/sopc_builder/bin/europa -I E:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I E:/altera/14.0/quartus/sopc_builder/bin -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=rangefinder_sopc_ram_cpu --dir=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0180_ram_cpu_gen/ --quartus_dir=E:/altera/14.0/quartus --verilog --config=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0180_ram_cpu_gen//rangefinder_sopc_ram_cpu_component_configuration.pl  --do_build_sim=0  ]
+Info: ram_cpu: Done RTL generation for module 'rangefinder_sopc_ram_cpu'
+Info: ram_cpu: "rangefinder_sopc" instantiated altera_avalon_onchip_memory2 "ram_cpu"
+Info: sys_id: "rangefinder_sopc" instantiated altera_avalon_sysid_qsys "sys_id"
+Info: sys_timer: Starting RTL generation for module 'rangefinder_sopc_sys_timer'
+Info: sys_timer:   Generation command is [exec E:/altera/14.0/quartus/bin64//perl/bin/perl.exe -I E:/altera/14.0/quartus/bin64//perl/lib -I E:/altera/14.0/quartus/sopc_builder/bin/europa -I E:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I E:/altera/14.0/quartus/sopc_builder/bin -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=rangefinder_sopc_sys_timer --dir=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0182_sys_timer_gen/ --quartus_dir=E:/altera/14.0/quartus --verilog --config=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0182_sys_timer_gen//rangefinder_sopc_sys_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_timer: Done RTL generation for module 'rangefinder_sopc_sys_timer'
+Info: sys_timer: "rangefinder_sopc" instantiated altera_avalon_timer "sys_timer"
+Info: pc_uart: Starting RTL generation for module 'rangefinder_sopc_pc_uart'
+Info: pc_uart:   Generation command is [exec E:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I E:/altera/14.0/quartus/bin64/perl/lib -I E:/altera/14.0/quartus/sopc_builder/bin/europa -I E:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I E:/altera/14.0/quartus/sopc_builder/bin -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=rangefinder_sopc_pc_uart --dir=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0183_pc_uart_gen/ --quartus_dir=E:/altera/14.0/quartus --verilog --config=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0183_pc_uart_gen//rangefinder_sopc_pc_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: pc_uart: Done RTL generation for module 'rangefinder_sopc_pc_uart'
+Info: pc_uart: "rangefinder_sopc" instantiated altera_avalon_uart "pc_uart"
+Info: leds_port: Starting RTL generation for module 'rangefinder_sopc_leds_port'
+Info: leds_port:   Generation command is [exec E:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I E:/altera/14.0/quartus/bin64/perl/lib -I E:/altera/14.0/quartus/sopc_builder/bin/europa -I E:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I E:/altera/14.0/quartus/sopc_builder/bin -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=rangefinder_sopc_leds_port --dir=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0184_leds_port_gen/ --quartus_dir=E:/altera/14.0/quartus --verilog --config=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0184_leds_port_gen//rangefinder_sopc_leds_port_component_configuration.pl  --do_build_sim=0  ]
+Info: leds_port: Done RTL generation for module 'rangefinder_sopc_leds_port'
+Info: leds_port: "rangefinder_sopc" instantiated altera_avalon_pio "leds_port"
+Info: i2c_port: Starting RTL generation for module 'rangefinder_sopc_i2c_port'
+Info: i2c_port:   Generation command is [exec E:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I E:/altera/14.0/quartus/bin64/perl/lib -I E:/altera/14.0/quartus/sopc_builder/bin/europa -I E:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I E:/altera/14.0/quartus/sopc_builder/bin -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=rangefinder_sopc_i2c_port --dir=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0185_i2c_port_gen/ --quartus_dir=E:/altera/14.0/quartus --verilog --config=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0185_i2c_port_gen//rangefinder_sopc_i2c_port_component_configuration.pl  --do_build_sim=0  ]
+Info: i2c_port: Done RTL generation for module 'rangefinder_sopc_i2c_port'
+Info: i2c_port: "rangefinder_sopc" instantiated altera_avalon_pio "i2c_port"
+Info: laser_driver: "rangefinder_sopc" instantiated laser_driver "laser_driver"
+Info: spi_tdc: "rangefinder_sopc" instantiated spi_controller "spi_tdc"
+Info: pulse_generator: "rangefinder_sopc" instantiated pulse_generator "pulse_generator"
+Info: rs485_de: Starting RTL generation for module 'rangefinder_sopc_rs485_de'
+Info: rs485_de:   Generation command is [exec E:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I E:/altera/14.0/quartus/bin64/perl/lib -I E:/altera/14.0/quartus/sopc_builder/bin/europa -I E:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I E:/altera/14.0/quartus/sopc_builder/bin -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=rangefinder_sopc_rs485_de --dir=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0189_rs485_de_gen/ --quartus_dir=E:/altera/14.0/quartus --verilog --config=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0189_rs485_de_gen//rangefinder_sopc_rs485_de_component_configuration.pl  --do_build_sim=0  ]
+Info: rs485_de: Done RTL generation for module 'rangefinder_sopc_rs485_de'
+Info: rs485_de: "rangefinder_sopc" instantiated altera_avalon_pio "rs485_de"
+Info: service_timer: Starting RTL generation for module 'rangefinder_sopc_service_timer'
+Info: service_timer:   Generation command is [exec E:/altera/14.0/quartus/bin64//perl/bin/perl.exe -I E:/altera/14.0/quartus/bin64//perl/lib -I E:/altera/14.0/quartus/sopc_builder/bin/europa -I E:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I E:/altera/14.0/quartus/sopc_builder/bin -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=rangefinder_sopc_service_timer --dir=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0190_service_timer_gen/ --quartus_dir=E:/altera/14.0/quartus --verilog --config=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0190_service_timer_gen//rangefinder_sopc_service_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: service_timer: Done RTL generation for module 'rangefinder_sopc_service_timer'
+Info: service_timer: "rangefinder_sopc" instantiated altera_avalon_timer "service_timer"
+Info: apd_overcurrent: Starting RTL generation for module 'rangefinder_sopc_apd_overcurrent'
+Info: apd_overcurrent:   Generation command is [exec E:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I E:/altera/14.0/quartus/bin64/perl/lib -I E:/altera/14.0/quartus/sopc_builder/bin/europa -I E:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I E:/altera/14.0/quartus/sopc_builder/bin -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- E:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=rangefinder_sopc_apd_overcurrent --dir=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0191_apd_overcurrent_gen/ --quartus_dir=E:/altera/14.0/quartus --verilog --config=C:/Users/user/AppData/Local/Temp/alt7315_4584613928910046837.dir/0191_apd_overcurrent_gen//rangefinder_sopc_apd_overcurrent_component_configuration.pl  --do_build_sim=0  ]
+Info: apd_overcurrent: Done RTL generation for module 'rangefinder_sopc_apd_overcurrent'
+Info: apd_overcurrent: "rangefinder_sopc" instantiated altera_avalon_pio "apd_overcurrent"
+Info: stepper_atten: "rangefinder_sopc" instantiated stepper_controller "stepper_atten"
+Info: sample_recorder: "rangefinder_sopc" instantiated sample_recorder "sample_recorder"
+Info: Reusing file E:/HDL_projects/rangefinder/rangefinder_v6/QSYS/rangefinder_sopc/synthesis/submodules/pulse_cross_domain.v
+Info: mm_interconnect_0: "rangefinder_sopc" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "rangefinder_sopc" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "rangefinder_sopc" instantiated altera_reset_controller "rst_controller"
+Info: cpu_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_instruction_master_translator"
+Info: cpu_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "cpu_jtag_debug_module_translator"
+Info: cpu_instruction_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_instruction_master_agent"
+Info: cpu_jtag_debug_module_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "cpu_jtag_debug_module_agent"
+Info: cpu_jtag_debug_module_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "cpu_jtag_debug_module_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cpu_instruction_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "cpu_instruction_master_limiter"
+Info: Reusing file E:/HDL_projects/rangefinder/rangefinder_v6/QSYS/rangefinder_sopc/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file E:/HDL_projects/rangefinder/rangefinder_v6/QSYS/rangefinder_sopc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file E:/HDL_projects/rangefinder/rangefinder_v6/QSYS/rangefinder_sopc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file E:/HDL_projects/rangefinder/rangefinder_v6/QSYS/rangefinder_sopc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rangefinder_sopc: Done "rangefinder_sopc" with 38 modules, 71 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

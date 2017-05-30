@@ -1,0 +1,47 @@
+module system_clock
+(
+input ref_clk,      //in clock - 50 MHz 
+output clk_133MHz,  
+output clk_8MHz,
+output clk_200MHz,
+output pll_locked,
+output clk_2MHz
+);
+
+reg [3:0] self_reset = 4'b0001;
+reg [3:0] divider = 4'b0000;
+wire pll_areset;
+wire pll_clk_133_MHz;
+wire pll_clk_8_MHz;
+wire pll_clk_200_MHz;
+wire pll_locked_status;
+
+assign clk_100MHz=pll_clk_133_MHz;
+assign clk_8MHz=pll_clk_8_MHz;
+assign clk_200MHz=pll_clk_200_MHz;
+assign pll_locked=pll_locked_status;
+assign clk_2MHz=divider[1];
+
+assign pll_areset=self_reset[3];
+
+
+always@ (posedge ref_clk or posedge pll_locked)
+         begin
+			 if (pll_locked) self_reset<=4'b0001;
+			 else self_reset<={self_reset[2:0],1'b0};
+			end
+			
+always@ (posedge pll_clk_8_MHz)
+         divider<=divider+1;
+
+system_pll u0 
+(
+   .areset(pll_areset),
+   .inclk0(ref_clk),
+   .c0(pll_clk_133_MHz),
+   .c1(pll_clk_8_MHz),
+   .c2(pll_clk_200_MHz),
+   .locked(pll_locked_status)
+);
+
+endmodule 

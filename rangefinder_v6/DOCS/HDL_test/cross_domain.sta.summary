@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_b'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'clk_a'
+Slack : 0.240
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_b'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_a'
+Slack : 0.336
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk_a'
+Slack : -0.328
+TNS   : -0.328
+
+Type  : Slow 1200mV 85C Model Removal 'clk_a'
+Slack : 0.826
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_a'
+Slack : -3.000
+TNS   : -5.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_b'
+Slack : -3.000
+TNS   : -5.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_b'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_a'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_b'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_a'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk_a'
+Slack : -0.195
+TNS   : -0.195
+
+Type  : Slow 1200mV 0C Model Removal 'clk_a'
+Slack : 0.736
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_a'
+Slack : -3.000
+TNS   : -5.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_b'
+Slack : -3.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_b'
+Slack : 0.548
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_a'
+Slack : 0.581
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_b'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_a'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_a'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk_a'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_a'
+Slack : -3.000
+TNS   : -5.122
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_b'
+Slack : -3.000
+TNS   : -5.122
+
+------------------------------------------------------------

@@ -1,0 +1,221 @@
+module rf_kit_top
+(
+//on-board
+input SYSTEM_CLK, //50MHz, located on R8
+input [1:0] BUTTONS, //E1,J15
+input [3:0] DIP, //M15,B9,T8,M1
+output [7:0] LEDS, //L3,B1,F3,D1,A11,B13,A13,A15
+output I2C_SCL, //F2, on-board i2c
+inout I2C_SDA, //F1
+output ADC_SPI_CS, //A10, on-board spi (slow adc)
+output ADC_SPI_CLK, //B14
+output ADC_SPI_MOSI, //B10
+input  ADC_SPI_MISO, //A9
+output [12:0] SDRAM_ADDR,
+output SDRAM_CLK,
+output SDRAM_CKE,
+output [1:0] SDRAM_DQM,
+output SDRAM_WE_N,
+output SDRAM_CAS_N,
+output SDRAM_RAS_N,
+output SDRAM_CS_N,
+output [1:0] SDRAM_BA,
+inout [15:0] SDRAM_DQ, 
+//external interfaces
+input  PC_UART_RX, //connection with PC
+output PC_UART_TX,
+input  UART_0_RX, //connection with 1st display
+output UART_0_TX,
+input  UART_1_RX, //connection with 2nd display
+output UART_1_TX,
+input  UART_2_RX, //connection with horiz sensor
+output UART_2_TX,
+input  UART_3_RX, //connection with angle sensor
+output UART_3_TX,
+input  UART_4_RX, //connection with focus sensor
+output UART_4_TX,
+input  UART_5_RX, //connection with power
+output UART_5_TX,
+//to analog board (laser,tdc,amplifier,apd source)
+output SPI_0_CS_MAX1932, //voltage source for apd 
+output SPI_0_CS_TDC7200, //time measurement
+output SPI_0_CS_COMP_REF, //dac - reference for direct comparator
+output SPI_0_CS_LMH6881, //amplifier
+output SPI_0_CS_DAC_LASER, //dac - refer for laser
+output SPI_0_CLK, //
+output SPI_0_MOSI, //
+input  SPI_0_MISO, //
+input DIRECT_COMPARATOR, 
+input ADAPTIVE_COMPARATOR,
+output TDC_STROBE, //enable tdc
+output TDC_REF_CLK, //8 MHz
+output LASER,
+//to digital board (rtc,sensors of T,P, prom,)
+output EXT_I2C_SCL, // external i2c
+inout  EXT_I2C_SDA, //
+output SPI_1_CS_IRIS, //iris diafragm 
+output SPI_1_CS_ATTEN, //attenuator
+output SPI_1_CLK, //
+output SPI_1_MOSI, //
+input  SPI_1_MISO, //
+//fast adc bus
+output AD9480_CLK, //lvds out
+input AD9480_CLKO, //lvds in
+input AD9480_D0,   //lvds in
+input AD9480_D1,   //lvds in
+input AD9480_D2,   //lvds in
+input AD9480_D3,   //lvds in
+input AD9480_D4,   //lvds in
+input AD9480_D5,   //lvds in
+input AD9480_D6,   //lvds in
+input AD9480_D7    //lvds in
+);
+
+wire cpu_clk_133_MHz;
+wire tdc_clk_8_MHz;
+wire adc_clk_200_MHz;
+wire pll_locked;
+wire global_reset;
+wire [15:0] cpu_port;
+
+wire [7:0] adc_sample;
+
+assign adc_sample={AD9480_D7,AD9480_D6,AD9480_D5,AD9480_D4,AD9480_D3,AD9480_D2,AD9480_D1,AD9480_D0};
+
+//system clocks
+system_clock sys_clk
+(
+   .ref_clk(SYSTEM_CLK),      //50 MHz
+   .clk_133MHz(cpu_clk_133_MHz),  
+   .clk_8MHz(tdc_clk_8_MHz),
+   .clk_200MHz(adc_clk_200_MHz),
+   .pll_locked(pll_locked)
+);
+
+//reset generator
+reset_generator #(.CNTR_WIDTH(20)) rst_gen
+(
+   .clk(SYSTEM_CLK),
+   .pll_locked(pll_locked),
+   .global_reset(global_reset)
+);
+
+wire [31:0] leds;
+assign LEDS=leds;
+/*
+    sopc u0 (
+        .clk_clk     (SYSTEM_CLK),     //  clk.clk
+        .gpio_export (leds)  // gpio.export
+    );
+*/
+
+
+//system on a chip 
+rf_sopc sopc (
+        .clk_clk                      (SYSTEM_CLK),                      //           clk.clk
+        .reset_reset_n                (0),                //         reset.reset_n
+    /*    .ram_0_address                (<connected-to-ram_0_address>),                //         ram_0.address
+        .ram_0_chipselect             (<connected-to-ram_0_chipselect>),             //              .chipselect
+        .ram_0_clken                  (<connected-to-ram_0_clken>),                  //              .clken
+        .ram_0_write                  (<connected-to-ram_0_write>),                  //              .write
+        .ram_0_readdata               (<connected-to-ram_0_readdata>),               //              .readdata
+        .ram_0_writedata              (<connected-to-ram_0_writedata>),              //              .writedata
+        .ram_0_clk_clk                (<connected-to-ram_0_clk_clk>),                //     ram_0_clk.clk
+        .ram_0_reset_reset            (<connected-to-ram_0_reset_reset>),            //   ram_0_reset.reset
+        .ram_0_reset_reset_req        (<connected-to-ram_0_reset_reset_req>),        //              .reset_req
+        .ram_1_address                (<connected-to-ram_1_address>),                //         ram_1.address
+        .ram_1_chipselect             (<connected-to-ram_1_chipselect>),             //              .chipselect
+        .ram_1_clken                  (<connected-to-ram_1_clken>),                  //              .clken
+        .ram_1_write                  (<connected-to-ram_1_write>),                  //              .write
+        .ram_1_readdata               (<connected-to-ram_1_readdata>),               //              .readdata
+        .ram_1_writedata              (<connected-to-ram_1_writedata>),              //              .writedata
+        .ram_1_clk_clk                (<connected-to-ram_1_clk_clk>),                //     ram_1_clk.clk
+        .ram_1_reset_reset            (<connected-to-ram_1_reset_reset>),            //   ram_1_reset.reset
+        .ram_1_reset_reset_req        (<connected-to-ram_1_reset_reset_req>),        //              .reset_req
+        .ram_2_address                (<connected-to-ram_2_address>),                //         ram_2.address
+        .ram_2_chipselect             (<connected-to-ram_2_chipselect>),             //              .chipselect
+        .ram_2_clken                  (<connected-to-ram_2_clken>),                  //              .clken
+        .ram_2_write                  (<connected-to-ram_2_write>),                  //              .write
+        .ram_2_readdata               (<connected-to-ram_2_readdata>),               //              .readdata
+        .ram_2_writedata              (<connected-to-ram_2_writedata>),              //              .writedata
+        .ram_2_clk_clk                (<connected-to-ram_2_clk_clk>),                //     ram_2_clk.clk
+        .ram_2_reset_reset            (<connected-to-ram_2_reset_reset>),            //   ram_2_reset.reset
+        .ram_2_reset_reset_req        (<connected-to-ram_2_reset_reset_req>),        //              .reset_req
+        .ram_3_address                (<connected-to-ram_3_address>),                //         ram_3.address
+        .ram_3_chipselect             (<connected-to-ram_3_chipselect>),             //              .chipselect
+        .ram_3_clken                  (<connected-to-ram_3_clken>),                  //              .clken
+        .ram_3_write                  (<connected-to-ram_3_write>),                  //              .write
+        .ram_3_readdata               (<connected-to-ram_3_readdata>),               //              .readdata
+        .ram_3_writedata              (<connected-to-ram_3_writedata>),              //              .writedata
+        .ram_3_clk_clk                (<connected-to-ram_3_clk_clk>),                //     ram_3_clk.clk
+        .ram_3_reset_reset            (<connected-to-ram_3_reset_reset>),            //   ram_3_reset.reset
+        .ram_3_reset_reset_req        (<connected-to-ram_3_reset_reset_req>),        //              .reset_req
+        .ram_4_address                (<connected-to-ram_4_address>),                //         ram_4.address
+        .ram_4_chipselect             (<connected-to-ram_4_chipselect>),             //              .chipselect
+        .ram_4_clken                  (<connected-to-ram_4_clken>),                  //              .clken
+        .ram_4_write                  (<connected-to-ram_4_write>),                  //              .write
+        .ram_4_readdata               (<connected-to-ram_4_readdata>),               //              .readdata
+        .ram_4_writedata              (<connected-to-ram_4_writedata>),              //              .writedata
+        .ram_4_clk_clk                (<connected-to-ram_4_clk_clk>),                //     ram_4_clk.clk
+        .ram_4_reset_reset            (<connected-to-ram_4_reset_reset>),            //   ram_4_reset.reset
+        .ram_4_reset_reset_req        (<connected-to-ram_4_reset_reset_req>),        //              .reset_req
+        .ram_5_address                (<connected-to-ram_5_address>),                //         ram_5.address
+        .ram_5_chipselect             (<connected-to-ram_5_chipselect>),             //              .chipselect
+        .ram_5_clken                  (<connected-to-ram_5_clken>),                  //              .clken
+        .ram_5_write                  (<connected-to-ram_5_write>),                  //              .write
+        .ram_5_readdata               (<connected-to-ram_5_readdata>),               //              .readdata
+        .ram_5_writedata              (<connected-to-ram_5_writedata>),              //              .writedata
+        .ram_5_clk_clk                (<connected-to-ram_5_clk_clk>),                //     ram_5_clk.clk
+        .ram_5_reset_reset            (<connected-to-ram_5_reset_reset>),            //   ram_5_reset.reset
+        .ram_5_reset_reset_req        (<connected-to-ram_5_reset_reset_req>),        //              .reset_req */
+        .laser_driver_ref_clk         (adc_clk_200_MHz),         //  laser_driver.ref_clk
+        .laser_driver_driver_enable   (~global_reset),   //              .driver_enable
+        .laser_driver_laser           (LASER),           //              .laser
+        .laser_driver_comparator      (DIRECT_COMPARATOR),      //              .comparator
+        .sample_loader_global_reset   (global_reset),   // sample_loader.global_reset
+        .sample_loader_adc_clk        (adc_clk_200_MHz),        //              .adc_clk
+        .sample_loader_adc_sample     (adc_sample),     //              .adc_sample
+        .sample_loader_dir_comparator (DIRECT_COMPARATOR), //              .dir_comparator
+        .sample_loader_ad_comparator  (ADAPTIVE_COMPARATOR),  //              .ad_comparator
+        .sample_loader_tdc_strobe     (TDC_STROBE),     //              .tdc_strobe
+    /*    .sample_loader_avm_clk        (<connected-to-sample_loader_avm_clk>),        //              .avm_clk
+        .sample_loader_avm_reset      (<connected-to-sample_loader_avm_reset>),      //              .avm_reset
+        .sample_loader_avm_wdata      (<connected-to-sample_loader_avm_wdata>),      //              .avm_wdata
+        .sample_loader_avm_cs         (<connected-to-sample_loader_avm_cs>),         //              .avm_cs
+        .sample_loader_avm_write      (<connected-to-sample_loader_avm_write>),      //              .avm_write
+        .sample_loader_avm_addr_0     (<connected-to-sample_loader_avm_addr_0>),     //              .avm_addr_0
+        .sample_loader_avm_addr_1     (<connected-to-sample_loader_avm_addr_1>),     //              .avm_addr_1
+        .sample_loader_avm_addr_2     (<connected-to-sample_loader_avm_addr_2>),     //              .avm_addr_2
+        .sample_loader_avm_addr_3     (<connected-to-sample_loader_avm_addr_3>),     //              .avm_addr_3
+        .sample_loader_avm_addr_4     (<connected-to-sample_loader_avm_addr_4>),     //              .avm_addr_4
+        .sample_loader_avm_addr_5     (<connected-to-sample_loader_avm_addr_5>),     //              .avm_addr_5 */
+        .uart_0_rxd                   (UART_0_RX),                   //        uart_0.rxd
+        .uart_0_txd                   (UART_0_TX),                   //              .txd
+        .pc_uart_rxd                  (PC_UART_RX),                  //       pc_uart.rxd
+        .pc_uart_txd                  (PC_UART_TX),                  //              .txd
+        .uart_1_rxd                   (UART_1_RX),                   //        uart_1.rxd
+        .uart_1_txd                   (UART_1_TX),                   //              .txd
+        .uart_2_rxd                   (UART_2_RX),                   //        uart_2.rxd
+        .uart_2_txd                   (UART_2_TX),                   //              .txd
+        .uart_3_rxd                   (UART_3_RX),                   //        uart_3.rxd
+        .uart_3_txd                   (UART_3_TX),                   //              .txd
+        .uart_4_rxd                   (UART_4_RX),                   //        uart_4.rxd
+        .uart_4_txd                   (UART_4_TX),                   //              .txd
+        .uart_5_rxd                   (UART_5_RX),                   //        uart_5.rxd
+        .uart_5_txd                   (UART_5_TX),                   //              .txd
+        .spi_0_MISO                   (SPI_0_MISO),                   //         spi_0.MISO
+        .spi_0_MOSI                   (SPI_0_MOSI),                   //              .MOSI
+        .spi_0_SCLK                   (SPI_0_CLK),                   //              .SCLK
+        .spi_0_SS_n                   ({SPI_0_CS_MAX1932,SPI_0_CS_TDC7200,SPI_0_CS_COMP_REF,SPI_0_CS_LMH6881,SPI_0_CS_DAC_LASER}),                   //              .SS_n
+        .spi_1_MISO                   (SPI_1_MISO),                   //         spi_1.MISO
+        .spi_1_MOSI                   (SPI_1_MOSI),                   //              .MOSI
+        .spi_1_SCLK                   (SPI_1_CLK),                   //              .SCLK
+        .spi_1_SS_n                   ({SPI_1_CS_ATTEN,SPI_1_CS_IRIS}),                   //              .SS_n
+        .i2c_0_export                 ({I2C_SDA,I2C_SCL}),                 //         i2c_0.export
+        .i2c_1_export                 ({EXT_I2C_SDA,EXT_I2C_SCL}),                 //         i2c_1.export
+        .leds_export                  (leds),                  //          leds.export
+        .gpio_export                  (cpu_port)                   //          gpio.export
+    );
+
+
+endmodule 

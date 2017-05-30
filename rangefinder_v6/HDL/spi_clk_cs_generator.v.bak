@@ -1,0 +1,83 @@
+module spi_clk_cs_generator
+(
+input clk,
+input reset,
+input slow_clk_en,
+input start_transaction,
+input spi_clk_polarity,
+input spi_clk_phase,
+input [7:0] data_len,
+output reg spi_cs,
+output reg spi_clk,
+output tx_shift_en,
+output rx_shift_en,
+output transfer_complete
+);
+
+reg spi_cycle_cntr = 0;
+
+reg spi_clk_posedge;
+reg spi_clk_negedge;
+
+reg transaction_active = 0;
+
+wire valid_edge;
+wire [7:0] spi_cycle_cntr_lim;
+wire [7:0] data_len_inc;
+
+assign data_len_inc = data_len + 1;
+assign spi_cycle_cntr_lim={data_len_inc+1,1'b0};
+assign valid_edge = (spi_cycle_cntr>(1'd1-spi_clk_phase)) & (spi_cycle_cntr<(spi_cycle_cntr_lim-spi_clk_phase)) & slow_clk_en;
+assign transfer_complete = (spi_cycle_cntr>=(spi_cycle_cntr_lim-spi_clk_phase));
+
+always@ (posedge clk)
+		begin
+			if (reset|transfer_complete)
+			transaction_active<=0;
+			else if (start_transaction)
+			transaction_active<=0;
+		end 
+
+always@ (posedge clk)
+		begin
+		if ( reset| (~transaction_active))
+		spi_cycle_cntr<=0;
+		else if (transaction_active & slow_clk_en)
+		spi_cycle_cntr<=spi_cycle_cntr+1;
+		end 
+		
+always@ (*)
+		begin
+		if (spi_clk_polarity^spi_clk_phase)
+			begin
+			spi_clk_posedge=spi_cycle_cntr[0]&valid_edge;
+			spi_clk_negedge=(~spi_cycle_cntr[0])&valid_edge;
+			end
+		else
+			begin
+			spi_clk_posedge=(~spi_cycle_cntr[0])&valid_edge;
+			spi_clk_negedge=spi_cycle_cntr[0]&valid_edge;
+			end 
+		end 
+		
+always@ (posedge clk)
+		begin
+		 if (reset|(~transaction_active))
+			begin
+			spi_clk<=spi_clk_polarity;
+			spi_cs<=1;
+			end
+		 else
+			begin
+			spi_cs<=0;
+			if (spi_clk_negedge)
+			spi_clk<=0;
+			else if (spi_clk_posedge)
+			spi_clk<=1;
+			end 
+		end 
+		
+assign tx_shift_en = slow_clk_en & transaction_active & (~spi_cycle_cntr[0]);
+assign rx_shift_en = slow_clk_en & transaction_active & spi_cycle_cntr[0];
+
+endmodule 

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Oct 16 19:18:59 2016
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : clk_div
+Top-level Entity Name : clk_div
+Family : Cyclone III
+Total logic elements : 24
+    Total combinational functions : 23
+    Dedicated logic registers : 17
+Total registers : 17
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

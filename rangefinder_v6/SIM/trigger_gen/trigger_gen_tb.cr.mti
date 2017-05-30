@@ -1,0 +1,15 @@
+E:/HDL_projects/rangefinder/rangefinder_v5/SIM/trigger_pulse_gen.v {1 {vlog -work work E:/HDL_projects/rangefinder/rangefinder_v5/SIM/trigger_pulse_gen.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module trigger_pulse_gen
+
+Top level modules:
+	trigger_pulse_gen
+
+} {} {}} E:/HDL_projects/rangefinder/rangefinder_v5/SIM/tb_trigger_pulse_gen.v {1 {vlog -work work E:/HDL_projects/rangefinder/rangefinder_v5/SIM/tb_trigger_pulse_gen.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module tb_trigger_pulse_gen
+
+Top level modules:
+	tb_trigger_pulse_gen
+
+} {} {}}

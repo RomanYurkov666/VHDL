@@ -1,0 +1,8 @@
+
+State Machine - |spi_controller|state
+Name state.ST_TRANSACTION state.ST_WAIT state.ST_CONFIG state.ST_IDLE state.ST_READ_DATA 
+state.ST_IDLE 0 0 0 0 0 
+state.ST_CONFIG 0 0 1 1 0 
+state.ST_WAIT 0 1 0 1 0 
+state.ST_TRANSACTION 1 0 0 1 0 
+state.ST_READ_DATA 0 0 0 1 1 

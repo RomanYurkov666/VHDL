@@ -1,0 +1,109 @@
+module simple_dma
+(
+	input clk,
+	input reset,
+	input start_transfer,
+	output busy,
+	output [7:0] source_addr,
+	output [31:0] source_data,
+	output source_write,
+	input [31:0] source_q,
+	output [7:0] sink_addr,
+	output [31:0] sink_data,
+	output sink_write
+);
+
+localparam st_idle = 2'd0;
+localparam st_transfer = 2'd1;
+localparam st_delay = 2'd2;
+localparam st_clearing = 2'd3;
+
+reg [7:0] ram_ptr = 0;
+reg [7:0] ram_ptr1 = 0;
+reg [7:0] ram_ptr2 = 0;
+reg transfer_in_process1 = 0;
+reg transfer_in_process2 = 0;
+
+wire transfer_complete, clearing_complete, transfer_in_process;
+
+reg [1:0] state = st_idle;
+reg [1:0] next_state = st_idle;
+
+assign transfer_in_process = (state == st_transfer);
+
+assign source_addr = ram_ptr;
+assign source_data = 8'h00;
+assign source_write = (state == st_clearing);
+
+assign sink_addr = ram_ptr2; //src ram q, delayed from rdadr on 2 cycle
+assign sink_data = source_q;
+assign sink_write = transfer_in_process2; // delayed from rdadr on 2 cycle
+
+assign busy = (state != st_idle);
+
+assign transfer_complete = (state == st_transfer) & (ram_ptr == 8'hff);
+assign clearing_complete = (state == st_clearing) & (ram_ptr == 8'hff);
+
+always@ (posedge clk)
+	if (reset)
+		state<=st_idle;
+	else
+		state<=next_state;
+		
+always@ (state, start_transfer, transfer_complete, clearing_complete)
+	begin
+	next_state = st_idle;
+	case (state)
+		st_idle: begin
+			if (start_transfer)
+			next_state = st_transfer;
+			else
+			next_state = st_idle;
+		end
+		st_transfer: begin
+			if (transfer_complete)
+			next_state = st_delay;
+			else
+			next_state = st_transfer;
+		end 
+		st_delay: begin
+			next_state = st_clearing;
+		end
+		st_clearing: begin
+			if (clearing_complete)
+			next_state = st_idle;
+			else
+			next_state = st_clearing;
+		end
+		default:
+			next_state = st_idle;
+	endcase 
+	end 
+	
+always@ (posedge clk) //ram ptrs
+	begin
+	 if (reset | (state == st_idle) | (state ==st_delay))
+		ram_ptr <=8'd0;
+	 else
+		ram_ptr <= ram_ptr + 1'b1;
+	 ram_ptr1<=ram_ptr;
+	 ram_ptr2<=ram_ptr1;
+	 transfer_in_process1<=transfer_in_process;
+	 transfer_in_process2<=transfer_in_process1;
+	end 
+	
+endmodule 
+
+/*
+ram256x4_2ports	ram256x4_2ports_inst (
+	.address_a ( address_a_sig ),
+	.address_b ( address_b_sig ),
+	.clock ( clock_sig ),
+	.data_a ( data_a_sig ),
+	.data_b ( data_b_sig ),
+	.wren_a ( wren_a_sig ),
+	.wren_b ( wren_b_sig ),
+	.q_a ( q_a_sig ),
+	.q_b ( q_b_sig )
+	);
+*/

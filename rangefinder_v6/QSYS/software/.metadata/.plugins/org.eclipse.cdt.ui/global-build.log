@@ -1,0 +1,20 @@
+
+**** Build of configuration Nios II for project rangefinder_v5_250517 ****
+
+make mem_init_generate 
+Info: Building ../rangefinder_v5_250517_bsp/
+make --no-print-directory -C ../rangefinder_v5_250517_bsp/
+[BSP build complete]
+Post-processing to create mem_init/rangefinder_sopc_ram_cpu.hex...
+bash -c 'elf2hex rangefinder_v5_250517.elf 0x00000000 0x00007fff --width=32 \
+		--little-endian-mem --create-lanes=0  mem_init/rangefinder_sopc_ram_cpu.hex'
+Post-processing to create mem_init/hdl_sim/rangefinder_sopc_ram_cpu.dat...
+bash -c 'elf2dat --infile=rangefinder_v5_250517.elf --outfile=mem_init/hdl_sim/rangefinder_sopc_ram_cpu.dat \
+		--base=0x00000000 --end=0x00007fff --width=32 \
+		--little-endian-mem --create-lanes=0 '
+Post-processing to create mem_init/hdl_sim/rangefinder_sopc_ram_cpu.sym...
+nios2-elf-nm -n rangefinder_v5_250517.elf > mem_init/hdl_sim/rangefinder_sopc_ram_cpu.sym
+Post-processing to create mem_init/meminit.spd...
+Post-processing to create mem_init/meminit.qip...
+
+**** Build Finished ****

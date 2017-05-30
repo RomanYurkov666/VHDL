@@ -1,0 +1,263 @@
+Simulator report for clk_div
+Sun Oct 16 19:19:30 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 ms       ;
+; Simulation Netlist Size     ; 80 nodes     ;
+; Simulation Coverage         ;      85.11 % ;
+; Total Number of Transitions ; 393114       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C5F256C6  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      85.11 % ;
+; Total nodes checked                                 ; 80           ;
+; Total output ports checked                          ; 94           ;
+; Total output ports with complete 1/0-value coverage ; 80           ;
+; Total output ports with no 1/0-value coverage       ; 6            ;
+; Total output ports with no 1-value coverage         ; 12           ;
+; Total output ports with no 0-value coverage         ; 8            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |clk_div|counter[0]~reg0    ; |clk_div|counter[0]~reg0    ; q                ;
+; |clk_div|counter[1]~reg0    ; |clk_div|counter[1]~reg0    ; q                ;
+; |clk_div|counter[2]~reg0    ; |clk_div|counter[2]~reg0    ; q                ;
+; |clk_div|counter[3]~reg0    ; |clk_div|counter[3]~reg0    ; q                ;
+; |clk_div|counter[4]~reg0    ; |clk_div|counter[4]~reg0    ; q                ;
+; |clk_div|counter[5]~reg0    ; |clk_div|counter[5]~reg0    ; q                ;
+; |clk_div|counter[6]~reg0    ; |clk_div|counter[6]~reg0    ; q                ;
+; |clk_div|counter[7]~reg0    ; |clk_div|counter[7]~reg0    ; q                ;
+; |clk_div|cntr[1]            ; |clk_div|cntr[1]            ; q                ;
+; |clk_div|cntr[0]            ; |clk_div|cntr[0]            ; q                ;
+; |clk_div|cntr[3]            ; |clk_div|cntr[3]            ; q                ;
+; |clk_div|cntr[2]            ; |clk_div|cntr[2]            ; q                ;
+; |clk_div|cntr[5]            ; |clk_div|cntr[5]            ; q                ;
+; |clk_div|cntr[4]            ; |clk_div|cntr[4]            ; q                ;
+; |clk_div|cntr[7]            ; |clk_div|cntr[7]            ; q                ;
+; |clk_div|cntr[6]            ; |clk_div|cntr[6]            ; q                ;
+; |clk_div|counter[0]~8       ; |clk_div|counter[0]~8       ; combout          ;
+; |clk_div|counter[0]~8       ; |clk_div|counter[0]~9       ; cout             ;
+; |clk_div|counter[1]~11      ; |clk_div|counter[1]~11      ; combout          ;
+; |clk_div|counter[1]~11      ; |clk_div|counter[1]~12      ; cout             ;
+; |clk_div|counter[2]~13      ; |clk_div|counter[2]~13      ; combout          ;
+; |clk_div|counter[2]~13      ; |clk_div|counter[2]~14      ; cout             ;
+; |clk_div|counter[3]~15      ; |clk_div|counter[3]~15      ; combout          ;
+; |clk_div|counter[3]~15      ; |clk_div|counter[3]~16      ; cout             ;
+; |clk_div|counter[4]~17      ; |clk_div|counter[4]~17      ; combout          ;
+; |clk_div|counter[4]~17      ; |clk_div|counter[4]~18      ; cout             ;
+; |clk_div|counter[5]~19      ; |clk_div|counter[5]~19      ; combout          ;
+; |clk_div|counter[5]~19      ; |clk_div|counter[5]~20      ; cout             ;
+; |clk_div|counter[6]~21      ; |clk_div|counter[6]~21      ; combout          ;
+; |clk_div|counter[6]~21      ; |clk_div|counter[6]~22      ; cout             ;
+; |clk_div|counter[7]~23      ; |clk_div|counter[7]~23      ; combout          ;
+; |clk_div|cntr[0]~8          ; |clk_div|cntr[0]~8          ; combout          ;
+; |clk_div|cntr[0]~8          ; |clk_div|cntr[0]~9          ; cout             ;
+; |clk_div|cntr[1]~10         ; |clk_div|cntr[1]~10         ; combout          ;
+; |clk_div|cntr[1]~10         ; |clk_div|cntr[1]~11         ; cout             ;
+; |clk_div|cntr[2]~12         ; |clk_div|cntr[2]~12         ; combout          ;
+; |clk_div|cntr[2]~12         ; |clk_div|cntr[2]~13         ; cout             ;
+; |clk_div|cntr[3]~14         ; |clk_div|cntr[3]~14         ; combout          ;
+; |clk_div|cntr[3]~14         ; |clk_div|cntr[3]~15         ; cout             ;
+; |clk_div|cntr[4]~16         ; |clk_div|cntr[4]~16         ; combout          ;
+; |clk_div|cntr[4]~16         ; |clk_div|cntr[4]~17         ; cout             ;
+; |clk_div|cntr[5]~18         ; |clk_div|cntr[5]~18         ; combout          ;
+; |clk_div|cntr[5]~18         ; |clk_div|cntr[5]~19         ; cout             ;
+; |clk_div|cntr[6]~20         ; |clk_div|cntr[6]~20         ; combout          ;
+; |clk_div|cntr[6]~20         ; |clk_div|cntr[6]~21         ; cout             ;
+; |clk_div|cntr[7]~22         ; |clk_div|cntr[7]~22         ; combout          ;
+; |clk_div|Equal0~0           ; |clk_div|Equal0~0           ; combout          ;
+; |clk_div|Equal0~1           ; |clk_div|Equal0~1           ; combout          ;
+; |clk_div|Equal0~2           ; |clk_div|Equal0~2           ; combout          ;
+; |clk_div|Equal0~3           ; |clk_div|Equal0~3           ; combout          ;
+; |clk_div|Equal0~4           ; |clk_div|Equal0~4           ; combout          ;
+; |clk_div|divider1[0]        ; |clk_div|divider1[0]        ; q                ;
+; |clk_div|cntr_rst           ; |clk_div|cntr_rst           ; combout          ;
+; |clk_div|counter[0]~10      ; |clk_div|counter[0]~10      ; combout          ;
+; |clk_div|counter[0]~output  ; |clk_div|counter[0]~output  ; o                ;
+; |clk_div|counter[0]         ; |clk_div|counter[0]         ; padout           ;
+; |clk_div|counter[1]~output  ; |clk_div|counter[1]~output  ; o                ;
+; |clk_div|counter[1]         ; |clk_div|counter[1]         ; padout           ;
+; |clk_div|counter[2]~output  ; |clk_div|counter[2]~output  ; o                ;
+; |clk_div|counter[2]         ; |clk_div|counter[2]         ; padout           ;
+; |clk_div|counter[3]~output  ; |clk_div|counter[3]~output  ; o                ;
+; |clk_div|counter[3]         ; |clk_div|counter[3]         ; padout           ;
+; |clk_div|counter[4]~output  ; |clk_div|counter[4]~output  ; o                ;
+; |clk_div|counter[4]         ; |clk_div|counter[4]         ; padout           ;
+; |clk_div|counter[5]~output  ; |clk_div|counter[5]~output  ; o                ;
+; |clk_div|counter[5]         ; |clk_div|counter[5]         ; padout           ;
+; |clk_div|counter[6]~output  ; |clk_div|counter[6]~output  ; o                ;
+; |clk_div|counter[6]         ; |clk_div|counter[6]         ; padout           ;
+; |clk_div|counter[7]~output  ; |clk_div|counter[7]~output  ; o                ;
+; |clk_div|counter[7]         ; |clk_div|counter[7]         ; padout           ;
+; |clk_div|clk_en~output      ; |clk_div|clk_en~output      ; o                ;
+; |clk_div|clk_en             ; |clk_div|clk_en             ; padout           ;
+; |clk_div|divider[0]~input   ; |clk_div|divider[0]~input   ; o                ;
+; |clk_div|divider[0]         ; |clk_div|divider[0]         ; padout           ;
+; |clk_div|divider[3]~input   ; |clk_div|divider[3]~input   ; o                ;
+; |clk_div|divider[3]         ; |clk_div|divider[3]         ; padout           ;
+; |clk_div|clk~input          ; |clk_div|clk~input          ; o                ;
+; |clk_div|clk                ; |clk_div|clk                ; padout           ;
+; |clk_div|clk~inputclkctrl   ; |clk_div|clk~inputclkctrl   ; outclk           ;
+; |clk_div|divider1[0]~feeder ; |clk_div|divider1[0]~feeder ; combout          ;
++-----------------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |clk_div|divider[2]~input ; |clk_div|divider[2]~input ; o                ;
+; |clk_div|divider[2]       ; |clk_div|divider[2]       ; padout           ;
+; |clk_div|divider[4]~input ; |clk_div|divider[4]~input ; o                ;
+; |clk_div|divider[4]       ; |clk_div|divider[4]       ; padout           ;
+; |clk_div|divider[5]~input ; |clk_div|divider[5]~input ; o                ;
+; |clk_div|divider[5]       ; |clk_div|divider[5]       ; padout           ;
+; |clk_div|divider[6]~input ; |clk_div|divider[6]~input ; o                ;
+; |clk_div|divider[6]       ; |clk_div|divider[6]       ; padout           ;
+; |clk_div|divider[7]~input ; |clk_div|divider[7]~input ; o                ;
+; |clk_div|divider[7]       ; |clk_div|divider[7]       ; padout           ;
+; |clk_div|reset~input      ; |clk_div|reset~input      ; o                ;
+; |clk_div|reset            ; |clk_div|reset            ; padout           ;
++---------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |clk_div|divider[1]~input ; |clk_div|divider[1]~input ; o                ;
+; |clk_div|divider[1]       ; |clk_div|divider[1]       ; padout           ;
+; |clk_div|divider[5]~input ; |clk_div|divider[5]~input ; o                ;
+; |clk_div|divider[5]       ; |clk_div|divider[5]       ; padout           ;
+; |clk_div|divider[6]~input ; |clk_div|divider[6]~input ; o                ;
+; |clk_div|divider[6]       ; |clk_div|divider[6]       ; padout           ;
+; |clk_div|divider[7]~input ; |clk_div|divider[7]~input ; o                ;
+; |clk_div|divider[7]       ; |clk_div|divider[7]       ; padout           ;
++---------------------------+---------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Oct 16 19:19:24 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off clk_div -c clk_div
+Info: Using vector source file "D:/HDL_projects/Rangefinder_kit/DOCS/HDL_test/clk_div/clk_div.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      85.11 %
+Info: Number of transitions in simulation is 393114
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 154 megabytes
+    Info: Processing ended: Sun Oct 16 19:19:30 2016
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
+
+

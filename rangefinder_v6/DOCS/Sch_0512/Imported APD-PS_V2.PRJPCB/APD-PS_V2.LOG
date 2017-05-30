@@ -1,0 +1,109 @@
+PCAD Importer Log
+Project : APD-PS_V2.PRJPCB
+
+Section : E:\HDL_projects\rangefinder\rangefinder_v2\Rangefinder_kit\DOCS\Sch_0512\APD-PS_V2.sch
+    Section : Parsing Messages
+        Warning - 1 : Skipping Token defaultPinDes On Line 251
+        Warning - 1 : Skipping Token defaultPinDes On Line 259
+        Warning - 1 : Skipping Token defaultPinDes On Line 278
+        Warning - 1 : Skipping Token defaultPinDes On Line 285
+        Warning - 1 : Skipping Token defaultPinDes On Line 292
+        Warning - 1 : Skipping Token defaultPinDes On Line 299
+        Warning - 1 : Skipping Token defaultPinDes On Line 306
+        Warning - 1 : Skipping Token defaultPinDes On Line 314
+        Warning - 1 : Skipping Token defaultPinDes On Line 322
+        Warning - 1 : Skipping Token defaultPinDes On Line 330
+        Warning - 1 : Skipping Token defaultPinDes On Line 338
+        Warning - 1 : Skipping Token defaultPinDes On Line 346
+        Warning - 1 : Skipping Token defaultPinDes On Line 354
+        Warning - 1 : Skipping Token defaultPinDes On Line 362
+        Warning - 1 : Skipping Token defaultPinDes On Line 370
+        Warning - 1 : Skipping Token defaultPinDes On Line 378
+        Warning - 1 : Skipping Token defaultPinDes On Line 386
+        Warning - 1 : Skipping Token defaultPinDes On Line 393
+        Warning - 1 : Skipping Token defaultPinDes On Line 418
+        Warning - 1 : Skipping Token defaultPinDes On Line 426
+        Warning - 1 : Skipping Token defaultPinDes On Line 434
+        Warning - 1 : Skipping Token defaultPinDes On Line 462
+        Warning - 1 : Skipping Token defaultPinDes On Line 470
+        Warning - 1 : Skipping Token defaultPinDes On Line 491
+        Warning - 1 : Skipping Token defaultPinDes On Line 499
+        Warning - 1 : Skipping Token defaultPinDes On Line 507
+        Warning - 1 : Skipping Token defaultPinDes On Line 515
+        Warning - 1 : Skipping Token defaultPinDes On Line 523
+        Warning - 1 : Skipping Token defaultPinDes On Line 541
+        Warning - 1 : Skipping Token defaultPinDes On Line 549
+        Warning - 1 : Skipping Token defaultPinDes On Line 557
+        Warning - 1 : Skipping Token defaultPinDes On Line 584
+        Warning - 1 : Skipping Token defaultPinDes On Line 592
+        Warning - 1 : Skipping Token defaultPinDes On Line 600
+        Warning - 1 : Skipping Token defaultPinDes On Line 607
+        Warning - 1 : Skipping Token defaultPinDes On Line 614
+        Warning - 1 : Skipping Token defaultPinDes On Line 621
+        Warning - 1 : Skipping Token defaultPinDes On Line 628
+        Warning - 1 : Skipping Token defaultPinDes On Line 635
+        Warning - 1 : Skipping Token defaultPinDes On Line 642
+        Warning - 1 : Skipping Token defaultPinDes On Line 650
+        Warning - 1 : Skipping Token defaultPinDes On Line 658
+        Warning - 1 : Skipping Token defaultPinDes On Line 666
+        Warning - 1 : Skipping Token defaultPinDes On Line 674
+        Warning - 1 : Skipping Token defaultPinDes On Line 681
+        Warning - 1 : Skipping Token defaultPinDes On Line 689
+        Warning - 1 : Skipping Token defaultPinDes On Line 714
+        Warning - 1 : Skipping Token defaultPinDes On Line 722
+        Warning - 1 : Skipping Token defaultPinDes On Line 740
+        Warning - 1 : Skipping Token defaultPinDes On Line 748
+        Warning - 1 : Skipping Token defaultPinDes On Line 756
+        Warning - 1 : Skipping Token defaultPinDes On Line 764
+        Warning - 1 : Skipping Token defaultPinDes On Line 772
+        Warning - 1 : Skipping Token defaultPinDes On Line 780
+        Warning - 1 : Skipping Token defaultPinDes On Line 788
+        Warning - 1 : Skipping Token defaultPinDes On Line 796
+        Warning - 1 : Skipping Token defaultPinDes On Line 804
+        Warning - 1 : Skipping Token defaultPinDes On Line 812
+        Warning - 1 : Skipping Token defaultPinDes On Line 820
+        Warning - 1 : Skipping Token defaultPinDes On Line 828
+        Warning - 1 : Skipping Token defaultPinDes On Line 848
+        Warning - 1 : Skipping Token defaultPinDes On Line 856
+        Warning - 1 : Skipping Token defaultPinDes On Line 876
+        Warning - 1 : Skipping Token defaultPinDes On Line 884
+        Warning - 1 : Skipping Token defaultPinDes On Line 900
+        Warning - 1 : Skipping Token gridDfns On Line 1852
+        Warning - 1 : Skipping Token refPointSize On Line 1875
+        Warning - 1 : Skipping Token infoPointSize On Line 1876
+        Warning - 1 : Skipping Token junctionSize On Line 1877
+        Warning - 1 : Skipping Token refPointSizePrint On Line 1878
+        Warning - 1 : Skipping Token infoPointSizePrint On Line 1879
+        Warning - 1 : Skipping Token junctionSizePrint On Line 1880
+        Warning - 1 : Skipping Token PrintRegion On Line 2556
+        Warning - 1 : Skipping Token PrintRegion On Line 2607
+        Warning - 1 : Skipping Token schematicPrintSettings On Line 2611
+        Warning - 1 : Skipping Token layerState On Line 2618
+        Warning - 1 : Skipping Token ecoState On Line 2629
+        Warning - 1 : Skipping Token currentTextStyle On Line 2630
+        Warning - 1 : Skipping Token reportSettings On Line 2633
+    EndSection
+
+    Section : Generating SCH Library - APD-PS_V2.SchLib
+    EndSection
+
+    Section : Generating SCH Sheet - First_Sheet.SCHDOC
+    EndSection
+
+    Section : Generating SCH Sheet - Sheet1.SCHDOC
+        Warning : P-CAD Port [+5V] will be replaced by a net label at location [4094.488mil : 12125.984mil]
+        Warning : P-CAD Port [COM] will be replaced by a net label at location [9448.819mil : 9448.819mil]
+        Warning : P-CAD Port [V-APD] will be replaced by a net label at location [12440.945mil : 12125.984mil]
+        Warning : P-CAD Port [+5V] will be replaced by a net label at location [19527.559mil : 11811.024mil]
+        Warning : P-CAD Port [COM] will be replaced by a net label at location [11417.323mil : 9448.819mil]
+    EndSection
+
+    Section : Generating SCH Sheet - Sheet2.SCHDOC
+    EndSection
+
+    Section : Analyzing SCH Sheet - Sheet1.SCHDOC
+    EndSection
+
+    Section : Analyzing SCH Sheet - Sheet2.SCHDOC
+    EndSection
+EndSection

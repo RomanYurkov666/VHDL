@@ -1,0 +1,91 @@
+/*
+ * sample_recorder.h
+ *
+ *  Created on: 29.05.2017
+ *      Author: user
+ */
+
+#ifndef SAMPLE_RECORDER_H_
+#define SAMPLE_RECORDER_H_
+
+#include "alt_types.h"
+
+typedef enum
+{
+	control_reg = 			0x0,
+	channel_0_info_reg = 	0x1,
+	channel_1_info_reg = 	0x2,
+	channel_2_info_reg = 	0x3,
+	channel_3_info_reg = 	0x4,
+	channel_4_info_reg = 	0x5,
+	channel_5_info_reg = 	0x6,
+	status_reg = 			0x7,
+} t_sample_recorder_registers_addresses;
+
+#define START_STOP_BIT 				0x1
+
+#define LOAD_DATA_TO_RAM_BIT 		0x1
+#define COMPLETE_RECORD_BIT 		0x2
+#define TRIGGER_SOURCE_BIT			0x4
+#define ACTIVE_CHANNEL_SET_OFFSET	3
+#define TRIGGER_THRESHOLD_OFFSET	6
+#define TRIGGER_DIRECTION_BIT		0x4000
+#define RECORDING_DELAY_OFFSET		15
+
+typedef struct
+{
+  alt_u8 start_stop_flag; //1 bit; 1 - start measure, 0 - stop measure
+
+
+} t_sample_recorder_config;
+
+
+
+
+#define CONTROL_REG    0x0
+#define PULSE_CNT_REG  0x1
+#define ABS_CNT_REG    0x2
+#define START_RAM      0x3
+#define STOP0_RAM      0x4
+#define STOP1_RAM      0x5
+#define STOP2_RAM      0x6
+#define STOP3_RAM      0x7
+#define STOP4_RAM      0x8
+
+typedef struct
+{
+	unsigned short pulse_abs_coord;
+	unsigned char sample_size;
+	unsigned char ram_ptr;
+	unsigned buffer_full :1;
+	unsigned stop_detected :1;
+} sample_buffer_data;
+
+typedef struct
+{
+	unsigned short abs_position;
+	unsigned char amplitude;
+	unsigned char width;
+	unsigned char detected;
+	unsigned char sample[256];
+} pulse_data;
+
+typedef struct
+{
+	unsigned char pulse_counter;
+	unsigned short distance;
+	pulse_data pulse[6];
+} echo_signal_data;
+
+typedef enum
+{
+  start_sample = 0x0,
+  stop_sample = 0x1,
+  read_sample = 0x2
+} sample_loader_cmds;
+
+alt_u8* get_sample(alt_u8 num);
+
+
+
+#endif /* SAMPLE_RECORDER_H_ */

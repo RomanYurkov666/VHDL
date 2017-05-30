@@ -1,0 +1,32 @@
+`timescale 1ns/100ps
+module tb_trigger_pulse_gen();
+
+reg clk = 1;
+reg [7:0] noise = 0; 
+reg [7:0] signal = 0;
+
+wire [8:0] signal_plus_noise;
+wire [7:0] sample_gen;
+
+assign signal_plus_noise = noise + signal;
+assign sample_gen = signal_plus_noise[8]?255:signal_plus_noise[7:0];
+
+
+always #5
+	begin
+	clk = ~clk;
+	noise = $urandom%20;
+	signal = signal+1;
+	end 
+
+
+trigger_pulse_gen u0
+(
+	.clk(clk),
+	.sample(sample_gen),
+	.threshold(220),
+	.direction(1),
+	.trigger()
+);
+
+endmodule 

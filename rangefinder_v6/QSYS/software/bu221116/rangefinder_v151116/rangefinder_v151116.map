@@ -1,0 +1,1461 @@
+Archive member included because of file (symbol)
+
+e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+                              obj/default/sample_loader.o (memcpy)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/timer.o (alt_ic_isr_register)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+                              ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o (alt_load)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+                              ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o (alt_main)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+                              obj/default/uart.o (open)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+                              obj/default/uart.o (read)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o) (alt_release_fd)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+                              obj/default/uart.o (write)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_avalon_timer_sc_init)
+../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_uart_read_fd)
+../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_uart_init)
+../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o) (altera_avalon_uart_read)
+../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o) (altera_avalon_uart_write)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o) (close)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o) (alt_dev_list)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o) (_do_ctors)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o) (_do_dtors)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o) (alt_errno)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o) (alt_find_dev)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o) (_alt_tick_rate)
+../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o) (atexit)
+e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o) (exit)
+e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                              e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o) (_global_impure_ptr)
+e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o) (errno)
+e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+                              ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+                              e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o) (__register_exitproc)
+e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+                              e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o) (__call_exitprocs)
+../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+                              e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+pc_uart_receiver    0x88              obj/default/uart.o
+b                   0x4               obj/default/buttons.o
+pc_uart_file        0x4               obj/default/uart.o
+test_pulses         0x24              obj/default/test_generator.o
+f                   0x4               obj/default/buttons.o
+errno               0x4               e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ram_buffer          0x30              obj/default/sample_loader.o
+signal              0x628             obj/default/sample_loader.o
+buttons             0x10              obj/default/buttons.o
+_atexit0            0x190             e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+service_timer_context
+                    0x4               obj/default/timer.o
+rx_data             0x40              obj/default/tdc.o
+tdc_result          0x30              obj/default/tdc.o
+timer_context       0x4               obj/default/timer.o
+flags               0x4               obj/default/buttons.o
+sample              0x100             obj/default/sample_loader.o
+pc_uart_transmitter
+                    0x21              obj/default/uart.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000000000 0x0000000000000020
+ram_cpu          0x0000000000000020 0x0000000000007fe0
+ram_sample_5     0x0000000000009000 0x0000000000000100
+ram_sample_4     0x0000000000009100 0x0000000000000100
+ram_sample_3     0x0000000000009200 0x0000000000000100
+ram_sample_2     0x0000000000009300 0x0000000000000100
+ram_sample_1     0x0000000000009400 0x0000000000000100
+ram_sample_0     0x0000000000009500 0x0000000000000100
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/accelerometer.o
+LOAD obj/default/buttons.o
+LOAD obj/default/fpga.o
+LOAD obj/default/i2c.o
+LOAD obj/default/laser.o
+LOAD obj/default/leds.o
+LOAD obj/default/main.o
+LOAD obj/default/measurement.o
+LOAD obj/default/sample_loader.o
+LOAD obj/default/spi.o
+LOAD obj/default/tdc.o
+LOAD obj/default/test_generator.o
+LOAD obj/default/timer.o
+LOAD obj/default/uart.o
+LOAD obj/default/vga.o
+LOAD e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libstdc++.a
+LOAD e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libm.a
+LOAD e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+START GROUP
+LOAD e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a
+LOAD e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+LOAD ../rangefinder_v151116_bsp/\libhal_bsp.a
+END GROUP
+LOAD e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+                0x0000000000000000                __alt_mem_ram_cpu = 0x0
+                0x0000000000009000                __alt_mem_ram_sample_5 = 0x9000
+                0x0000000000009100                __alt_mem_ram_sample_4 = 0x9100
+                0x0000000000009200                __alt_mem_ram_sample_3 = 0x9200
+                0x0000000000009300                __alt_mem_ram_sample_2 = 0x9300
+                0x0000000000009400                __alt_mem_ram_sample_1 = 0x9400
+                0x0000000000009500                __alt_mem_ram_sample_0 = 0x9500
+
+.entry          0x0000000000000000       0x20
+ *(.entry)
+ .entry         0x0000000000000000       0x20 ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+                0x0000000000000000                __reset
+
+.exceptions     0x0000000000000020      0x198
+                0x0000000000000020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x0000000000000020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x0000000000000020        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x0000000000000020                alt_irq_entry
+ .exceptions.entry.label
+                0x0000000000000020        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x0000000000000020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x0000000000000020       0x54 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x0000000000000074       0x10 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x0000000000000084        0x4 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x0000000000000088        0x4 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x000000000000008c        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x000000000000008c        0x8 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x0000000000000094        0x4 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x0000000000000098        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x0000000000000098        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x0000000000000098       0x54 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x00000000000000ec       0xcc ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00000000000000ec                alt_irq_handler
+                0x00000000000001b8                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x0000000000000020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x00000000000001b8     0x53e8
+                0x00000000000001b8                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000000001b8       0x4c ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+                0x00000000000001b8                _start
+ .text          0x0000000000000204      0x1a8 obj/default/accelerometer.o
+                0x0000000000000204                accelerometer_init
+                0x000000000000024c                refresh_accelerometer_data
+                0x000000000000034c                get_x_coord
+                0x000000000000036c                get_y_coord
+                0x000000000000038c                get_z_coord
+ .text          0x00000000000003ac      0x290 obj/default/buttons.o
+                0x00000000000003ac                buttons_handler_init
+                0x0000000000000494                read_but
+                0x000000000000061c                buttons_status
+ .text          0x000000000000063c       0x60 obj/default/fpga.o
+                0x000000000000063c                ProcCmdFPGA
+ .text          0x000000000000069c      0x880 obj/default/i2c.o
+                0x000000000000069c                i2c_start
+                0x00000000000006fc                i2c_stop
+                0x000000000000075c                i2c_send_bit
+                0x00000000000007e8                i2c_read_bit
+                0x0000000000000868                i2c_send_byte
+                0x00000000000009a0                i2c_read_byte
+                0x0000000000000b78                read_ack
+                0x0000000000000bf8                write_ack
+                0x0000000000000c7c                i2c_delay
+                0x0000000000000cc0                i2c_init
+                0x0000000000000d00                write_command
+                0x0000000000000d68                write_command_multiple
+                0x0000000000000e08                read_command
+                0x0000000000000e7c                read_word_command
+ .text          0x0000000000000f1c       0x7c obj/default/laser.o
+                0x0000000000000f1c                laser_init
+                0x0000000000000f50                generate_pulse
+ .text          0x0000000000000f98      0x17c obj/default/leds.o
+                0x0000000000000f98                change_axis
+                0x0000000000000fd4                leds_init
+                0x0000000000001000                leds_driver
+ .text          0x0000000000001114      0x11c obj/default/main.o
+                0x0000000000001114                main
+                0x0000000000001130                sys_init
+                0x000000000000117c                mainloop
+ .text          0x0000000000001230       0xe8 obj/default/measurement.o
+                0x0000000000001230                make_measurement
+                0x00000000000012d4                delay
+ .text          0x0000000000001318      0x6dc obj/default/sample_loader.o
+                0x0000000000001318                start_recording
+                0x0000000000001360                stop_recording
+                0x000000000000138c                get_buffer_status
+                0x00000000000013a8                reset_ram_buffers
+                0x0000000000001414                reset_memory_master
+                0x0000000000001460                read_abs_counter
+                0x0000000000001490                refresh_meas_data
+                0x0000000000001830                get_max
+                0x00000000000018b4                ProcCmd_SampleLoader
+                0x0000000000001938                send_sample
+ .text          0x00000000000019f4      0x14c obj/default/spi.o
+                0x00000000000019f4                send_spi_word
+ .text          0x0000000000001b40      0x708 obj/default/tdc.o
+                0x0000000000001b40                write_16bword_to_tdc
+                0x0000000000001bd0                read_16bword_from_tdc
+                0x0000000000001c54                write_32bword_to_tdc
+                0x0000000000001cd0                read_32bword_from_tdc
+                0x0000000000001d44                tdc_init
+                0x0000000000001d88                tdc_test
+                0x0000000000001dbc                read_tdc_result
+                0x0000000000001e50                set_tdc_enable
+                0x0000000000001e98                start_tdc_measurement
+                0x0000000000001ed4                read_tdc_meas_data
+                0x0000000000001f90                ProcCmd_TDC
+                0x0000000000002148                Init_TDC7200
+                0x0000000000002188                tdc7200_reset
+                0x00000000000021d8                TDC7200_reg_init
+ .text          0x0000000000002248      0x2d8 obj/default/test_generator.o
+                0x0000000000002248                test_pulse_generator_init
+                0x0000000000002328                generate_test_pulses
+                0x0000000000002428                ProcCmd_Test_Gen
+ .text          0x0000000000002520      0x484 obj/default/timer.o
+                0x00000000000025e0                sys_timer_init
+                0x0000000000002680                sys_timer_start
+                0x00000000000026c8                service_timer_start
+                0x0000000000002710                sys_timer_stop
+                0x0000000000002758                service_timer_stop
+                0x00000000000027a0                register_sys_timer_interrupt
+                0x0000000000002804                check_timer_event
+                0x0000000000002824                reset_timer_event_flag
+                0x0000000000002844                read_sys_time_ms
+                0x0000000000002864                request_for_rs485_driver_switch
+                0x000000000000289c                service_timer_routine
+                0x00000000000028e8                delay_us_by_timer
+ .text          0x00000000000029a4      0x7f8 obj/default/uart.o
+                0x00000000000029a4                uart_init
+                0x00000000000029e4                send2pc
+                0x0000000000002a4c                send2pc_cmdpc
+                0x0000000000002af0                read_pc_cmds
+                0x0000000000002b6c                check_buffer_pc
+                0x0000000000002dfc                integrity_check
+                0x0000000000002e9c                pc_crc_calc
+                0x0000000000002f10                pc_cmd_handler
+                0x0000000000002fe8                set_rs485driver_dir
+                0x0000000000003018                send_uart
+                0x000000000000306c                uart_direct_transmission
+                0x00000000000030e0                uart_direct_transmission_cmd
+ .text          0x000000000000319c      0x158 obj/default/vga.o
+                0x000000000000319c                vga_init
+                0x00000000000031c8                write_data2vga
+                0x00000000000032b0                ProcCmd_VGA
+ .text          0x00000000000032f4       0xf8 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+                0x00000000000032f4                memcpy
+ .text          0x00000000000033ec      0x1d8 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+                0x00000000000033ec                alt_ic_isr_register
+                0x000000000000343c                alt_ic_irq_enable
+                0x00000000000034d8                alt_ic_irq_disable
+                0x0000000000003578                alt_ic_irq_enabled
+ .text          0x00000000000035c4       0xf0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x00000000000035c4                alt_iic_isr_register
+ .text          0x00000000000036b4        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x00000000000036b4        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x00000000000036b4        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x00000000000036b4       0xec ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+                0x0000000000003720                alt_load
+ .text          0x00000000000037a0       0x78 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000037a0                alt_main
+ .text          0x0000000000003818      0x270 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+                0x0000000000003934                open
+ .text          0x0000000000003a88      0x140 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+                0x0000000000003ad8                read
+ .text          0x0000000000003bc8       0x60 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x0000000000003bc8                alt_release_fd
+ .text          0x0000000000003c28      0x13c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+                0x0000000000003c78                write
+ .text          0x0000000000003d64       0xc8 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000003d9c                alt_irq_init
+                0x0000000000003dd0                alt_sys_init
+ .text          0x0000000000003e2c       0xfc ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x0000000000003ea0                alt_avalon_timer_sc_init
+ .text          0x0000000000003f28      0x110 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+                0x0000000000003f28                altera_avalon_uart_read_fd
+                0x0000000000003f88                altera_avalon_uart_write_fd
+                0x0000000000003fe8                altera_avalon_uart_close_fd
+ .text          0x0000000000004038      0x3a8 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+                0x0000000000004038                altera_avalon_uart_init
+                0x000000000000438c                altera_avalon_uart_close
+ .text          0x00000000000043e0      0x230 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                0x0000000000004430                altera_avalon_uart_read
+ .text          0x0000000000004610      0x1f8 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                0x0000000000004660                altera_avalon_uart_write
+ .text          0x0000000000004808      0x118 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+                0x0000000000004858                close
+ .text          0x0000000000004920       0x44 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000000004920                alt_dcache_flush_all
+ .text          0x0000000000004964       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x0000000000004990       0xf0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x00000000000049e0                alt_dev_llist_insert
+ .text          0x0000000000004a80       0x5c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                0x0000000000004a80                _do_ctors
+ .text          0x0000000000004adc       0x5c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                0x0000000000004adc                _do_dtors
+ .text          0x0000000000004b38        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x0000000000004b38        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x0000000000004b38       0x90 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x0000000000004b38                alt_find_dev
+ .text          0x0000000000004bc8      0x114 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x0000000000004bc8                alt_find_file
+ .text          0x0000000000004cdc       0xb4 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x0000000000004cdc                alt_get_fd
+ .text          0x0000000000004d90       0x30 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000000004d90                alt_icache_flush_all
+ .text          0x0000000000004dc0      0x138 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x0000000000004e80                alt_io_redirect
+ .text          0x0000000000004ef8      0x19c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000000004ef8                alt_alarm_stop
+                0x0000000000004f90                alt_tick
+ .text          0x0000000000005094       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x0000000000005094                altera_nios2_qsys_irq_init
+ .text          0x00000000000050b4       0x8c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x00000000000050b4                alt_icache_flush
+ .text          0x0000000000005140       0x14 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+                0x0000000000005140                atexit
+ .text          0x0000000000005154       0x38 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+                0x0000000000005154                exit
+ .text          0x000000000000518c        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .text          0x000000000000518c        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .text          0x000000000000518c       0x7c e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+                0x000000000000518c                memcmp
+ .text          0x0000000000005208       0x8c e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+                0x0000000000005208                strlen
+ .text          0x0000000000005294      0x130 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+                0x0000000000005294                __register_exitproc
+ .text          0x00000000000053c4      0x1a0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+                0x00000000000053c4                __call_exitprocs
+ .text          0x0000000000005564       0x3c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+                0x0000000000005564                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                0x00000000000055a0                PROVIDE (__etext, ABSOLUTE (.))
+                0x00000000000055a0                PROVIDE (_etext, ABSOLUTE (.))
+                0x00000000000055a0                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00000000000055a0                . = ALIGN (0x4)
+                0x00000000000055a0                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x00000000000055a0                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00000000000055a0                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x00000000000055a0                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00000000000055a0                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x00000000000055a0                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x00000000000055a0                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x00000000000055a0                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00000000000055a0                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x00000000000055a0                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x00000000000055a0                . = ALIGN (0x4)
+
+.rodata         0x00000000000055a0       0x40
+                0x00000000000055a0                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00000000000055a0                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00000000000055a0       0x10 obj/default/uart.o
+ .rodata        0x00000000000055b0       0x10 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .rodata        0x00000000000055c0       0x10 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x00000000000055d0        0xc ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .rodata.str1.4
+                0x00000000000055dc        0x4 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ *(.rodata1)
+                0x00000000000055e0                . = ALIGN (0x4)
+                0x00000000000055e0                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00000000000055a0                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00000000000055e0      0x6b8 load address 0x0000000000005c98
+                0x00000000000055e0                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00000000000055e0                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000000055e0        0x0 ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+ .data          0x00000000000055e0        0x0 obj/default/accelerometer.o
+ .data          0x00000000000055e0        0x0 obj/default/buttons.o
+ .data          0x00000000000055e0        0x0 obj/default/fpga.o
+ .data          0x00000000000055e0        0x0 obj/default/i2c.o
+ .data          0x00000000000055e0        0x0 obj/default/laser.o
+ .data          0x00000000000055e0        0x0 obj/default/leds.o
+ .data          0x00000000000055e0        0x0 obj/default/main.o
+ .data          0x00000000000055e0        0x0 obj/default/measurement.o
+ .data          0x00000000000055e0        0x0 obj/default/sample_loader.o
+ .data          0x00000000000055e0        0x0 obj/default/spi.o
+ .data          0x00000000000055e0        0xa obj/default/tdc.o
+                0x00000000000055e0                TDC7200_reg_local_copy
+ .data          0x00000000000055ea        0x0 obj/default/test_generator.o
+ .data          0x00000000000055ea        0x0 obj/default/timer.o
+ .data          0x00000000000055ea        0x0 obj/default/uart.o
+ .data          0x00000000000055ea        0x0 obj/default/vga.o
+ .data          0x00000000000055ea        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x00000000000055ea        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+ *fill*         0x00000000000055ea        0x2 
+ .data          0x00000000000055ec       0xc4 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00000000000056b0        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x00000000000056b0        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .data          0x00000000000056b0        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .data          0x00000000000056b0        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .data          0x00000000000056b0        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .data          0x00000000000056b0        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x00000000000056b0        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00000000000056b0      0x1a8 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00000000000056b0                alt_dev_null
+                0x00000000000056d8                alt_fd_list
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x0000000000005858        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x0000000000005858        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+ .data          0x0000000000005858        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .data          0x0000000000005858      0x400 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .data          0x0000000000005c58        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .data          0x0000000000005c58        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .data          0x0000000000005c58        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .data          0x0000000000005c58        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+ .data          0x0000000000005c58        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000005c58        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+                0x000000000000dc58                _gp = ABSOLUTE ((. + 0x8000))
+                0x000000000000dc58                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0000000000005c58        0x1 obj/default/leds.o
+                0x0000000000005c58                leds_status
+ *fill*         0x0000000000005c59        0x3 
+ .sdata         0x0000000000005c5c        0x8 obj/default/timer.o
+                0x0000000000005c5c                timer_context_ptr
+                0x0000000000005c60                service_timer_context_ptr
+ .sdata         0x0000000000005c64        0x8 obj/default/uart.o
+                0x0000000000005c64                rec_pc
+                0x0000000000005c68                trans_pc
+ .sdata         0x0000000000005c6c        0x4 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000005c6c                alt_priority_mask
+ .sdata         0x0000000000005c70       0x14 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000005c70                alt_fs_list
+                0x0000000000005c78                alt_dev_list
+                0x0000000000005c80                alt_max_fd
+ .sdata         0x0000000000005c84        0x4 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+                0x0000000000005c84                alt_errno
+ .sdata         0x0000000000005c88        0x8 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000000005c88                alt_alarm_list
+ .sdata         0x0000000000005c90        0x8 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                0x0000000000005c90                _global_impure_ptr
+                0x0000000000005c94                _impure_ptr
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000005c98                . = ALIGN (0x4)
+                0x0000000000005c98                _edata = ABSOLUTE (.)
+                0x0000000000005c98                PROVIDE (edata, ABSOLUTE (.))
+                0x0000000000005c98                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0000000000005c98                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000000000006350      0xba4
+                0x0000000000006350                __bss_start = ABSOLUTE (.)
+                0x0000000000006350                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0000000000006350                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000006350       0x14 obj/default/accelerometer.o
+                0x0000000000006350                DATAX
+                0x0000000000006352                DATAY
+                0x0000000000006354                DATAZ
+                0x0000000000006358                x_angle
+                0x000000000000635c                y_angle
+                0x0000000000006360                z_angle
+ .sbss          0x0000000000006364        0xc obj/default/buttons.o
+                0x0000000000006364                b
+                0x0000000000006368                f
+                0x000000000000636c                flags
+ .sbss          0x0000000000006370        0x1 obj/default/fpga.o
+                0x0000000000006370                mode
+ .sbss          0x0000000000006371        0x8 obj/default/leds.o
+                0x0000000000006371                rigth_blink
+                0x0000000000006372                left_blink
+                0x0000000000006373                direction
+                0x0000000000006374                shift
+                0x0000000000006375                blinky_flag
+                0x0000000000006376                blinky_status
+                0x0000000000006377                axis_num
+                0x0000000000006378                counter
+ .sbss          0x0000000000006379        0x1 obj/default/main.o
+                0x0000000000006379                i
+ *fill*         0x000000000000637a        0x2 
+ .sbss          0x000000000000637c       0x1c obj/default/timer.o
+                0x000000000000637c                timer_event_flag
+                0x0000000000006380                sys_abs_time_ms
+                0x0000000000006384                service_timer_event_flag
+                0x0000000000006388                service_timer_ticks_cnt
+                0x000000000000638c                neccesary_tickes_cnt
+                0x000000000000638e                rs485_switch_request_flag
+                0x0000000000006390                service_timer_context
+                0x0000000000006394                timer_context
+ .sbss          0x0000000000006398        0x4 obj/default/uart.o
+                0x0000000000006398                pc_uart_file
+ .sbss          0x000000000000639c        0x1 obj/default/vga.o
+                0x000000000000639c                current_vga_gain
+ *fill*         0x000000000000639d        0x3 
+ .sbss          0x00000000000063a0        0x4 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00000000000063a0                alt_irq_active
+ .sbss          0x00000000000063a4        0xc ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000063a4                alt_argc
+                0x00000000000063a8                alt_argv
+                0x00000000000063ac                alt_envp
+ .sbss          0x00000000000063b0        0x8 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+                0x00000000000063b0                _alt_tick_rate
+                0x00000000000063b4                _alt_nticks
+ .sbss          0x00000000000063b8        0x4 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+                0x00000000000063b8                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00000000000063bc                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00000000000063bc                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+ .bss           0x00000000000063bc        0x0 obj/default/accelerometer.o
+ .bss           0x00000000000063bc        0x0 obj/default/buttons.o
+ .bss           0x00000000000063bc        0x0 obj/default/fpga.o
+ .bss           0x00000000000063bc        0x0 obj/default/i2c.o
+ .bss           0x00000000000063bc        0x0 obj/default/laser.o
+ .bss           0x00000000000063bc        0x0 obj/default/leds.o
+ .bss           0x00000000000063bc        0x0 obj/default/main.o
+ .bss           0x00000000000063bc        0x0 obj/default/measurement.o
+ .bss           0x00000000000063bc        0x0 obj/default/sample_loader.o
+ .bss           0x00000000000063bc        0x0 obj/default/spi.o
+ .bss           0x00000000000063bc        0x0 obj/default/tdc.o
+ .bss           0x00000000000063bc        0x0 obj/default/test_generator.o
+ .bss           0x00000000000063bc        0x0 obj/default/timer.o
+ .bss           0x00000000000063bc        0x0 obj/default/uart.o
+ .bss           0x00000000000063bc        0x0 obj/default/vga.o
+ .bss           0x00000000000063bc        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x00000000000063bc        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+ .bss           0x00000000000063bc        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .bss           0x00000000000063bc        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .bss           0x00000000000063bc        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .bss           0x00000000000063bc        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .bss           0x00000000000063bc        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .bss           0x00000000000063bc        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+ .bss           0x00000000000063bc        0x0 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .bss           0x00000000000063bc        0x0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+ *(COMMON)
+ COMMON         0x00000000000063bc       0x10 obj/default/buttons.o
+                0x00000000000063bc                buttons
+ COMMON         0x00000000000063cc      0x758 obj/default/sample_loader.o
+                0x00000000000063cc                ram_buffer
+                0x00000000000063fc                signal
+                0x0000000000006a24                sample
+ COMMON         0x0000000000006b24       0x70 obj/default/tdc.o
+                0x0000000000006b24                rx_data
+                0x0000000000006b64                tdc_result
+ COMMON         0x0000000000006b94       0x24 obj/default/test_generator.o
+                0x0000000000006b94                test_pulses
+ COMMON         0x0000000000006bb8       0xa9 obj/default/uart.o
+                0x0000000000006bb8                pc_uart_receiver
+                0x0000000000006c40                pc_uart_transmitter
+ *fill*         0x0000000000006c61        0x3 
+ COMMON         0x0000000000006c64      0x100 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000006c64                alt_irq
+ COMMON         0x0000000000006d64      0x190 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+                0x0000000000006d64                _atexit0
+                0x0000000000006ef4                . = ALIGN (0x4)
+                0x0000000000006ef4                __bss_end = ABSOLUTE (.)
+
+.ram_cpu        0x0000000000006ef4        0x0
+                0x0000000000006ef4                PROVIDE (_alt_partition_ram_cpu_start, ABSOLUTE (.))
+ *(.ram_cpu .ram_cpu. ram_cpu.*)
+                0x0000000000006ef4                . = ALIGN (0x4)
+                0x0000000000006ef4                PROVIDE (_alt_partition_ram_cpu_end, ABSOLUTE (.))
+                0x0000000000006ef4                _end = ABSOLUTE (.)
+                0x0000000000006ef4                end = ABSOLUTE (.)
+                0x0000000000006ef4                __alt_stack_base = ABSOLUTE (.)
+                0x0000000000006ef4                PROVIDE (_alt_partition_ram_cpu_load_addr, LOADADDR (.ram_cpu))
+
+.ram_sample_5   0x0000000000009000        0x0 load address 0x0000000000006ef4
+                0x0000000000009000                PROVIDE (_alt_partition_ram_sample_5_start, ABSOLUTE (.))
+ *(.ram_sample_5 .ram_sample_5. ram_sample_5.*)
+                0x0000000000009000                . = ALIGN (0x4)
+                0x0000000000009000                PROVIDE (_alt_partition_ram_sample_5_end, ABSOLUTE (.))
+                0x0000000000006ef4                PROVIDE (_alt_partition_ram_sample_5_load_addr, LOADADDR (.ram_sample_5))
+
+.ram_sample_4   0x0000000000009100        0x0 load address 0x0000000000006ef4
+                0x0000000000009100                PROVIDE (_alt_partition_ram_sample_4_start, ABSOLUTE (.))
+ *(.ram_sample_4 .ram_sample_4. ram_sample_4.*)
+                0x0000000000009100                . = ALIGN (0x4)
+                0x0000000000009100                PROVIDE (_alt_partition_ram_sample_4_end, ABSOLUTE (.))
+                0x0000000000006ef4                PROVIDE (_alt_partition_ram_sample_4_load_addr, LOADADDR (.ram_sample_4))
+
+.ram_sample_3   0x0000000000009200        0x0 load address 0x0000000000006ef4
+                0x0000000000009200                PROVIDE (_alt_partition_ram_sample_3_start, ABSOLUTE (.))
+ *(.ram_sample_3 .ram_sample_3. ram_sample_3.*)
+                0x0000000000009200                . = ALIGN (0x4)
+                0x0000000000009200                PROVIDE (_alt_partition_ram_sample_3_end, ABSOLUTE (.))
+                0x0000000000006ef4                PROVIDE (_alt_partition_ram_sample_3_load_addr, LOADADDR (.ram_sample_3))
+
+.ram_sample_2   0x0000000000009300        0x0 load address 0x0000000000006ef4
+                0x0000000000009300                PROVIDE (_alt_partition_ram_sample_2_start, ABSOLUTE (.))
+ *(.ram_sample_2 .ram_sample_2. ram_sample_2.*)
+                0x0000000000009300                . = ALIGN (0x4)
+                0x0000000000009300                PROVIDE (_alt_partition_ram_sample_2_end, ABSOLUTE (.))
+                0x0000000000006ef4                PROVIDE (_alt_partition_ram_sample_2_load_addr, LOADADDR (.ram_sample_2))
+
+.ram_sample_1   0x0000000000009400        0x0 load address 0x0000000000006ef4
+                0x0000000000009400                PROVIDE (_alt_partition_ram_sample_1_start, ABSOLUTE (.))
+ *(.ram_sample_1 .ram_sample_1. ram_sample_1.*)
+                0x0000000000009400                . = ALIGN (0x4)
+                0x0000000000009400                PROVIDE (_alt_partition_ram_sample_1_end, ABSOLUTE (.))
+                0x0000000000006ef4                PROVIDE (_alt_partition_ram_sample_1_load_addr, LOADADDR (.ram_sample_1))
+
+.ram_sample_0   0x0000000000009500        0x0 load address 0x0000000000006ef4
+                0x0000000000009500                PROVIDE (_alt_partition_ram_sample_0_start, ABSOLUTE (.))
+ *(.ram_sample_0 .ram_sample_0. ram_sample_0.*)
+                0x0000000000009500                . = ALIGN (0x4)
+                0x0000000000009500                PROVIDE (_alt_partition_ram_sample_0_end, ABSOLUTE (.))
+                0x0000000000006ef4                PROVIDE (_alt_partition_ram_sample_0_load_addr, LOADADDR (.ram_sample_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 obj/default/accelerometer.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 obj/default/buttons.o
+ .comment       0x0000000000000000       0x24 obj/default/fpga.o
+ .comment       0x0000000000000000       0x24 obj/default/i2c.o
+ .comment       0x0000000000000000       0x24 obj/default/laser.o
+ .comment       0x0000000000000000       0x24 obj/default/leds.o
+ .comment       0x0000000000000000       0x24 obj/default/main.o
+ .comment       0x0000000000000000       0x24 obj/default/measurement.o
+ .comment       0x0000000000000000       0x24 obj/default/sample_loader.o
+ .comment       0x0000000000000000       0x24 obj/default/spi.o
+ .comment       0x0000000000000000       0x24 obj/default/tdc.o
+ .comment       0x0000000000000000       0x24 obj/default/test_generator.o
+ .comment       0x0000000000000000       0x24 obj/default/timer.o
+ .comment       0x0000000000000000       0x24 obj/default/uart.o
+ .comment       0x0000000000000000       0x24 obj/default/vga.o
+ .comment       0x0000000000000000       0x24 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x0000000000000000       0x24 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+ .comment       0x0000000000000000       0x24 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .comment       0x0000000000000000       0x24 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .comment       0x0000000000000000       0x24 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .comment       0x0000000000000000       0x24 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .comment       0x0000000000000000       0x24 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .comment       0x0000000000000000       0x24 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+ .comment       0x0000000000000000       0x24 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000000       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x770
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x20 obj/default/accelerometer.o
+ .debug_aranges
+                0x0000000000000048       0x20 obj/default/buttons.o
+ .debug_aranges
+                0x0000000000000068       0x20 obj/default/fpga.o
+ .debug_aranges
+                0x0000000000000088       0x20 obj/default/i2c.o
+ .debug_aranges
+                0x00000000000000a8       0x20 obj/default/laser.o
+ .debug_aranges
+                0x00000000000000c8       0x20 obj/default/leds.o
+ .debug_aranges
+                0x00000000000000e8       0x20 obj/default/main.o
+ .debug_aranges
+                0x0000000000000108       0x20 obj/default/measurement.o
+ .debug_aranges
+                0x0000000000000128       0x20 obj/default/sample_loader.o
+ .debug_aranges
+                0x0000000000000148       0x20 obj/default/spi.o
+ .debug_aranges
+                0x0000000000000168       0x20 obj/default/tdc.o
+ .debug_aranges
+                0x0000000000000188       0x20 obj/default/test_generator.o
+ .debug_aranges
+                0x00000000000001a8       0x20 obj/default/timer.o
+ .debug_aranges
+                0x00000000000001c8       0x20 obj/default/uart.o
+ .debug_aranges
+                0x00000000000001e8       0x20 obj/default/vga.o
+ .debug_aranges
+                0x0000000000000208       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000228       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x0000000000000248       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x0000000000000268       0x30 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x0000000000000298       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000000000002b8       0x18 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x00000000000002d0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000000000002f0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x0000000000000310       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x0000000000000330       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+ .debug_aranges
+                0x0000000000000350       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x0000000000000370       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_aranges
+                0x0000000000000390       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000000000003b0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_aranges
+                0x00000000000003d0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_aranges
+                0x00000000000003f0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_aranges
+                0x0000000000000410       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_aranges
+                0x0000000000000430       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_aranges
+                0x0000000000000450       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x0000000000000470       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x0000000000000490       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000000000004b0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000000000004d0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_aranges
+                0x00000000000004f0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_aranges
+                0x0000000000000510       0x18 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x0000000000000528       0x38 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x0000000000000560       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x0000000000000580       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x00000000000005a0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x00000000000005c0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000000000005e0       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x0000000000000600       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x0000000000000620       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x0000000000000640       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x0000000000000660       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x0000000000000680       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x00000000000006a0       0x18 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x00000000000006b8       0x18 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x00000000000006d0       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x00000000000006f0       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000710       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x0000000000000730       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x0000000000000750       0x20 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0xaac6
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x7a ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x000000000000007a      0x12f obj/default/accelerometer.o
+ .debug_info    0x00000000000001a9      0x22a obj/default/buttons.o
+ .debug_info    0x00000000000003d3      0x115 obj/default/fpga.o
+ .debug_info    0x00000000000004e8      0x331 obj/default/i2c.o
+ .debug_info    0x0000000000000819       0xb1 obj/default/laser.o
+ .debug_info    0x00000000000008ca      0x179 obj/default/leds.o
+ .debug_info    0x0000000000000a43      0x125 obj/default/main.o
+ .debug_info    0x0000000000000b68       0xb1 obj/default/measurement.o
+ .debug_info    0x0000000000000c19      0x4f2 obj/default/sample_loader.o
+ .debug_info    0x000000000000110b      0x123 obj/default/spi.o
+ .debug_info    0x000000000000122e      0x4b6 obj/default/tdc.o
+ .debug_info    0x00000000000016e4      0x1f5 obj/default/test_generator.o
+ .debug_info    0x00000000000018d9      0x3b1 obj/default/timer.o
+ .debug_info    0x0000000000001c8a      0xee1 obj/default/uart.o
+ .debug_info    0x0000000000002b6b      0x21e obj/default/vga.o
+ .debug_info    0x0000000000002d89      0x10e e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000002e97      0x364 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x00000000000031fb      0x1f6 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x00000000000033f1       0x83 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x0000000000003474      0x190 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000003604       0x8a ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x000000000000368e      0x159 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000000000037e7      0x139 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000003920      0x3f0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x0000000000003d10      0x500 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+ .debug_info    0x0000000000004210      0x2dd ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x00000000000044ed      0x507 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_info    0x00000000000049f4      0x486 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000004e7a      0x235 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_info    0x00000000000050af      0x481 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_info    0x0000000000005530      0x356 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_info    0x0000000000005886      0x331 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_info    0x0000000000005bb7      0x336 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_info    0x0000000000005eed      0x350 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x000000000000623d       0xa3 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00000000000062e0      0x4e3 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x00000000000067c3      0x1b9 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x000000000000697c       0x8d ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x0000000000006a09       0x8d ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_info    0x0000000000006a96       0xa3 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000000000006b39       0x89 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0000000000006bc2      0x30d ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x0000000000006ecf      0x30c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x00000000000071db      0x339 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x0000000000007514       0x90 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000000000075a4      0x4f0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x0000000000007a94      0x2b1 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x0000000000007d45       0x90 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x0000000000007dd5       0xda ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x0000000000007eaf      0x1e6 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+ .debug_info    0x0000000000008095      0x993 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_info    0x0000000000008a28      0x938 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_info    0x0000000000009360       0x84 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_info    0x00000000000093e4      0x117 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_info    0x00000000000094fb       0xdf e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_info    0x00000000000095da      0x9f9 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+ .debug_info    0x0000000000009fd3      0xa07 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x000000000000a9da       0xec ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x0000000000000000     0x381f
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012       0x90 obj/default/accelerometer.o
+ .debug_abbrev  0x00000000000000a2       0xd2 obj/default/buttons.o
+ .debug_abbrev  0x0000000000000174       0x9d obj/default/fpga.o
+ .debug_abbrev  0x0000000000000211      0x12e obj/default/i2c.o
+ .debug_abbrev  0x000000000000033f       0x69 obj/default/laser.o
+ .debug_abbrev  0x00000000000003a8       0x7a obj/default/leds.o
+ .debug_abbrev  0x0000000000000422       0x9d obj/default/main.o
+ .debug_abbrev  0x00000000000004bf       0x9d obj/default/measurement.o
+ .debug_abbrev  0x000000000000055c      0x1fd obj/default/sample_loader.o
+ .debug_abbrev  0x0000000000000759       0x96 obj/default/spi.o
+ .debug_abbrev  0x00000000000007ef      0x1dd obj/default/tdc.o
+ .debug_abbrev  0x00000000000009cc       0xef obj/default/test_generator.o
+ .debug_abbrev  0x0000000000000abb      0x159 obj/default/timer.o
+ .debug_abbrev  0x0000000000000c14      0x28d obj/default/uart.o
+ .debug_abbrev  0x0000000000000ea1      0x110 obj/default/vga.o
+ .debug_abbrev  0x0000000000000fb1       0x9c e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x000000000000104d      0x16a ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x00000000000011b7      0x169 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x0000000000001320       0x12 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x0000000000001332      0x124 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000001456       0x40 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x0000000000001496       0x9f ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000000000001535       0xba ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000000000015ef      0x148 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x0000000000001737      0x12e ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+ .debug_abbrev  0x0000000000001865       0xde ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x0000000000001943      0x133 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_abbrev  0x0000000000001a76      0x167 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000001bdd      0x155 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_abbrev  0x0000000000001d32      0x109 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_abbrev  0x0000000000001e3b      0x178 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_abbrev  0x0000000000001fb3      0x183 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_abbrev  0x0000000000002136      0x18a ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_abbrev  0x00000000000022c0      0x11f ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x00000000000023df       0x5a ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000000000002439       0xd9 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000000000002512      0x114 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x0000000000002626       0x79 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x000000000000269f       0x79 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_abbrev  0x0000000000002718       0x5a ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000000000002772       0x12 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000000000002784       0xf0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x0000000000002874       0xf0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x0000000000002964      0x10d ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x0000000000002a71       0x42 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000000000002ab3      0x114 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x0000000000002bc7      0x15a ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x0000000000002d21       0x42 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x0000000000002d63       0x8c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x0000000000002def      0x106 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x0000000000002ef5      0x1c8 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_abbrev  0x00000000000030bd      0x162 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x000000000000321f       0x37 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x0000000000003256       0x7f e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x00000000000032d5       0x90 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x0000000000003365      0x211 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x0000000000003576      0x203 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0000000000003779       0xa6 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x0000000000000000     0x3a1b
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x72 ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000072       0x63 obj/default/accelerometer.o
+ .debug_line    0x00000000000000d5       0x97 obj/default/buttons.o
+ .debug_line    0x000000000000016c       0x7b obj/default/fpga.o
+ .debug_line    0x00000000000001e7      0x1e4 obj/default/i2c.o
+ .debug_line    0x00000000000003cb       0x73 obj/default/laser.o
+ .debug_line    0x000000000000043e       0xbd obj/default/leds.o
+ .debug_line    0x00000000000004fb       0x5c obj/default/main.o
+ .debug_line    0x0000000000000557       0x63 obj/default/measurement.o
+ .debug_line    0x00000000000005ba      0x179 obj/default/sample_loader.o
+ .debug_line    0x0000000000000733       0x8b obj/default/spi.o
+ .debug_line    0x00000000000007be      0x139 obj/default/tdc.o
+ .debug_line    0x00000000000008f7       0xd2 obj/default/test_generator.o
+ .debug_line    0x00000000000009c9       0xee obj/default/timer.o
+ .debug_line    0x0000000000000ab7      0x304 obj/default/uart.o
+ .debug_line    0x0000000000000dbb       0x9f obj/default/vga.o
+ .debug_line    0x0000000000000e5a      0x13d e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000000f97       0xed ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000000000001084       0xdb ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x000000000000115f       0x6b ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x00000000000011ca       0xae ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000000000001278       0x50 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000000000012c8       0x92 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x000000000000135a       0xa4 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000000000013fe      0x125 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x0000000000001523      0x1fd ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+ .debug_line    0x0000000000001720       0xae ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x00000000000017ce      0x1fc ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_line    0x00000000000019ca      0x12a ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000001af4       0xfd ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x0000000000001bf1       0xf0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_line    0x0000000000001ce1      0x182 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_line    0x0000000000001e63      0x183 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_line    0x0000000000001fe6      0x166 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_line    0x000000000000214c      0x188 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x00000000000022d4       0x61 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000002335      0x11b ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x0000000000002450       0xd0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x0000000000002520       0x59 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x0000000000002579       0x59 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_line    0x00000000000025d2       0x51 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x0000000000002623       0xab ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00000000000026ce       0xb9 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x0000000000002787       0xd5 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x000000000000285c       0xd1 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x000000000000292d       0x50 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000000000000297d      0x156 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x0000000000002ad3      0x102 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000000000002bd5       0x51 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x0000000000002c26       0x81 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x0000000000002ca7      0x169 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+ .debug_line    0x0000000000002e10      0x215 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_line    0x0000000000003025      0x171 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000003196       0x5d e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+ .debug_line    0x00000000000031f3      0x18b e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_line    0x000000000000337e      0x180 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_line    0x00000000000034fe      0x24c e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+ .debug_line    0x000000000000374a      0x260 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x00000000000039aa       0x71 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x0000000000000000     0x1390
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x9c obj/default/accelerometer.o
+ .debug_frame   0x000000000000009c       0x64 obj/default/buttons.o
+ .debug_frame   0x0000000000000100       0x2c obj/default/fpga.o
+ .debug_frame   0x000000000000012c      0x198 obj/default/i2c.o
+ .debug_frame   0x00000000000002c4       0x48 obj/default/laser.o
+ .debug_frame   0x000000000000030c       0x64 obj/default/leds.o
+ .debug_frame   0x0000000000000370       0x64 obj/default/main.o
+ .debug_frame   0x00000000000003d4       0x48 obj/default/measurement.o
+ .debug_frame   0x000000000000041c      0x130 obj/default/sample_loader.o
+ .debug_frame   0x000000000000054c       0x2c obj/default/spi.o
+ .debug_frame   0x0000000000000578      0x19c obj/default/tdc.o
+ .debug_frame   0x0000000000000714       0x64 obj/default/test_generator.o
+ .debug_frame   0x0000000000000778      0x198 obj/default/timer.o
+ .debug_frame   0x0000000000000910      0x164 obj/default/uart.o
+ .debug_frame   0x0000000000000a74       0x64 obj/default/vga.o
+ .debug_frame   0x0000000000000ad8       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x0000000000000af8       0x80 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x0000000000000b78       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x0000000000000ba4       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x0000000000000bd0       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000c18       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x0000000000000c44       0x64 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x0000000000000ca8       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+ .debug_frame   0x0000000000000cf0       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x0000000000000d1c       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_frame   0x0000000000000d64       0x64 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000000000000dc8       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_frame   0x0000000000000e10       0x64 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_frame   0x0000000000000e74       0x9c ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_frame   0x0000000000000f10       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_frame   0x0000000000000f58       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_frame   0x0000000000000fa0       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x0000000000000fe8       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x0000000000001014       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000000000001040       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x0000000000001088       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_frame   0x00000000000010b4       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_frame   0x00000000000010e0       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x000000000000110c       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x0000000000001138       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x0000000000001164       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000000000001190       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x00000000000011d8       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x0000000000001220       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x000000000000124c       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x0000000000001278       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000001298       0x28 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_frame   0x00000000000012c0       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_frame   0x00000000000012e0       0x20 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000001300       0x2c e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x000000000000132c       0x38 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000001364       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x0000000000000000     0x2142
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0xfb obj/default/accelerometer.o
+ .debug_str     0x00000000000000fb      0x1a8 obj/default/buttons.o
+                                        0x251 (size before relaxing)
+ .debug_str     0x00000000000002a3       0x25 obj/default/fpga.o
+                                        0x114 (size before relaxing)
+ .debug_str     0x00000000000002c8       0xcb obj/default/i2c.o
+                                        0x1e3 (size before relaxing)
+ .debug_str     0x0000000000000393       0x29 obj/default/laser.o
+                                        0x10b (size before relaxing)
+ .debug_str     0x00000000000003bc       0x8a obj/default/leds.o
+                                        0x174 (size before relaxing)
+ .debug_str     0x0000000000000446       0x2a obj/default/main.o
+                                        0x135 (size before relaxing)
+ .debug_str     0x0000000000000470       0x41 obj/default/measurement.o
+                                         0xb5 (size before relaxing)
+ .debug_str     0x00000000000004b1      0x260 obj/default/sample_loader.o
+                                        0x390 (size before relaxing)
+ .debug_str     0x0000000000000711       0x6d obj/default/spi.o
+                                        0x146 (size before relaxing)
+ .debug_str     0x000000000000077e      0x149 obj/default/tdc.o
+                                        0x345 (size before relaxing)
+ .debug_str     0x00000000000008c7       0x6e obj/default/test_generator.o
+                                        0x188 (size before relaxing)
+ .debug_str     0x0000000000000935      0x209 obj/default/timer.o
+                                        0x35c (size before relaxing)
+ .debug_str     0x0000000000000b3e      0x49f obj/default/uart.o
+                                        0x7a2 (size before relaxing)
+ .debug_str     0x0000000000000fdd       0xc0 obj/default/vga.o
+                                        0x1ea (size before relaxing)
+ .debug_str     0x000000000000109d       0xf6 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+                                        0x124 (size before relaxing)
+ .debug_str     0x0000000000001193      0x12e ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+                                        0x201 (size before relaxing)
+ .debug_str     0x00000000000012c1       0x4c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                        0x1ab (size before relaxing)
+ .debug_str     0x000000000000130d       0x3a ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                        0x15a (size before relaxing)
+ .debug_str     0x0000000000001347       0x17 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                        0x109 (size before relaxing)
+ .debug_str     0x000000000000135e       0xe9 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x1d5 (size before relaxing)
+ .debug_str     0x0000000000001447       0x70 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x160 (size before relaxing)
+ .debug_str     0x00000000000014b7       0xb1 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+                                        0x20e (size before relaxing)
+ .debug_str     0x0000000000001568       0xe8 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+                                        0x2ba (size before relaxing)
+ .debug_str     0x0000000000001650       0x28 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+                                        0x1a2 (size before relaxing)
+ .debug_str     0x0000000000001678       0x14 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+                                        0x2bb (size before relaxing)
+ .debug_str     0x000000000000168c      0x133 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x2d5 (size before relaxing)
+ .debug_str     0x00000000000017bf       0x9a ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                                        0x20e (size before relaxing)
+ .debug_str     0x0000000000001859       0x7d ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+                                        0x2b8 (size before relaxing)
+ .debug_str     0x00000000000018d6       0xa0 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+                                        0x27a (size before relaxing)
+ .debug_str     0x0000000000001976       0x4f ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                                        0x25b (size before relaxing)
+ .debug_str     0x00000000000019c5       0x49 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                                        0x24f (size before relaxing)
+ .debug_str     0x0000000000001a0e       0x1b ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+                                        0x1ce (size before relaxing)
+ .debug_str     0x0000000000001a29       0x34 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x118 (size before relaxing)
+ .debug_str     0x0000000000001a5d       0x3e ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+                                        0x2c8 (size before relaxing)
+ .debug_str     0x0000000000001a9b       0x4b ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                        0x18f (size before relaxing)
+ .debug_str     0x0000000000001ae6       0x48 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                                         0x9f (size before relaxing)
+ .debug_str     0x0000000000001b2e       0x4c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                                         0x9e (size before relaxing)
+ .debug_str     0x0000000000001b7a       0x14 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_errno.o)
+                                        0x108 (size before relaxing)
+ .debug_str     0x0000000000001b8e       0x24 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                        0x1af (size before relaxing)
+ .debug_str     0x0000000000001bb2       0x26 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+                                        0x1bd (size before relaxing)
+ .debug_str     0x0000000000001bd8       0x30 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+                                        0x1df (size before relaxing)
+ .debug_str     0x0000000000001c08       0x34 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x118 (size before relaxing)
+ .debug_str     0x0000000000001c3c       0x56 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                                        0x2d9 (size before relaxing)
+ .debug_str     0x0000000000001c92       0x78 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+                                        0x215 (size before relaxing)
+ .debug_str     0x0000000000001d0a       0x3b ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                        0x11f (size before relaxing)
+ .debug_str     0x0000000000001d45       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                                        0x11e (size before relaxing)
+ .debug_str     0x0000000000001d71      0x10c e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+                                        0x20d (size before relaxing)
+ .debug_str     0x0000000000001e7d       0x5d e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+                                        0x52d (size before relaxing)
+ .debug_str     0x0000000000001eda       0xd2 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-impure.o)
+                                        0x524 (size before relaxing)
+ .debug_str     0x0000000000001fac       0x3d e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-int_errno.o)
+                                        0x16d (size before relaxing)
+ .debug_str     0x0000000000001fe9       0x42 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+                                        0x174 (size before relaxing)
+ .debug_str     0x000000000000202b       0x4f e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+                                        0x187 (size before relaxing)
+ .debug_str     0x000000000000207a       0x3d e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+                                        0x571 (size before relaxing)
+ .debug_str     0x00000000000020b7       0x61 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+                                        0x54f (size before relaxing)
+ .debug_str     0x0000000000002118       0x2a ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+                                        0x114 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x1fbc
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0xdc obj/default/accelerometer.o
+ .debug_loc     0x00000000000000dc       0x84 obj/default/buttons.o
+ .debug_loc     0x0000000000000160       0x2c obj/default/fpga.o
+ .debug_loc     0x000000000000018c      0x268 obj/default/i2c.o
+ .debug_loc     0x00000000000003f4       0x58 obj/default/laser.o
+ .debug_loc     0x000000000000044c       0x84 obj/default/leds.o
+ .debug_loc     0x00000000000004d0       0x84 obj/default/main.o
+ .debug_loc     0x0000000000000554       0x58 obj/default/measurement.o
+ .debug_loc     0x00000000000005ac      0x1b9 obj/default/sample_loader.o
+ .debug_loc     0x0000000000000765       0x2c obj/default/spi.o
+ .debug_loc     0x0000000000000791      0x269 obj/default/tdc.o
+ .debug_loc     0x00000000000009fa       0x84 obj/default/test_generator.o
+ .debug_loc     0x0000000000000a7e      0x268 obj/default/timer.o
+ .debug_loc     0x0000000000000ce6      0x210 obj/default/uart.o
+ .debug_loc     0x0000000000000ef6       0x84 obj/default/vga.o
+ .debug_loc     0x0000000000000f7a      0x1f2 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcpy.o)
+ .debug_loc     0x000000000000116c       0xb0 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x000000000000121c       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x0000000000001248       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x0000000000001274       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x00000000000012cc       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x00000000000012f8       0x84 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_loc     0x000000000000137c       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_read.o)
+ .debug_loc     0x00000000000013d4       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x0000000000001400       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_loc     0x0000000000001458       0x84 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000000000014dc       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_loc     0x0000000000001534       0x84 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_loc     0x00000000000015b8       0xdc ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_loc     0x0000000000001694       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_loc     0x00000000000016ec       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_loc     0x0000000000001744       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_loc     0x000000000000179c       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_loc     0x00000000000017c8       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x00000000000017f4       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x000000000000184c       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_loc     0x0000000000001878       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_loc     0x00000000000018a4       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x00000000000018d0       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x00000000000018fc       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x0000000000001928       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_loc     0x0000000000001954       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x00000000000019ac       0x58 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_loc     0x0000000000001a04       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_loc     0x0000000000001a30       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_loc     0x0000000000001a5c       0x2c e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-atexit.o)
+ .debug_loc     0x0000000000001a88       0x3e e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-exit.o)
+ .debug_loc     0x0000000000001ac6      0x103 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-memcmp.o)
+ .debug_loc     0x0000000000001bc9       0x52 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-strlen.o)
+ .debug_loc     0x0000000000001c1b      0x194 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__atexit.o)
+ .debug_loc     0x0000000000001daf      0x1e1 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_loc     0x0000000000001f90       0x2c ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x30
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x30 ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+                0x0000000000008000                __alt_data_end = 0x8000
+                0x0000000000008000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x0000000000006ef4                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x0000000000006ef4                PROVIDE (__alt_heap_start, end)
+                0x0000000000008000                PROVIDE (__alt_heap_limit, 0x8000)
+OUTPUT(rangefinder_v151116.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000       0xe8
+ .debug_ranges  0x0000000000000000       0x20 ../rangefinder_v151116_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x18 obj/default/tdc.o
+ .debug_ranges  0x0000000000000038       0x30 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_ranges  0x0000000000000068       0x28 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x0000000000000090       0x10 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x00000000000000a0       0x30 ../rangefinder_v151116_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x00000000000000d0       0x18 e:/altera/14.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-x86_64-mingw32/nios2-elf/lib\libc.a(lib_a-__call_atexit.o)

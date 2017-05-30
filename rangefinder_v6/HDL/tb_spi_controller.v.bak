@@ -1,0 +1,45 @@
+`timescale 1ns/100ps
+module tb_spi_controller ();
+
+reg clk = 1;
+reg reset = 1;
+reg start = 0;
+reg clk_pol = 0;
+reg clk_phase = 1;
+reg [7:0] dlen = 8;
+reg [7:0] clk_div = 8;
+reg [31:0] txdata = 32'h55AABBCC;
+
+
+always #5
+	clk<=~clk;
+	
+initial
+	begin
+	 #100
+	 reser=0;
+	 #50
+	 start=1;
+	 #10
+	 start=0;
+	end 
+
+spi_controller u0
+(
+//avalon mm
+.avmm_reset(reset),
+.avmm_clk(clk),
+.start(start),
+.clock_polarity(clk_pol),
+.clock_phase(clk_phase),
+.spi_data_length(dlen),
+.clock_divider(clk_div),
+.transmitter_data(txdata),
+.receiver_data(),
+.spi_clk(),
+.spi_cs_n(),
+.spi_mosi(),
+.spi_miso()
+);
+
+endmodule 

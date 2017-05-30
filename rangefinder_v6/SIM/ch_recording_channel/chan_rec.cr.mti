@@ -1,0 +1,22 @@
+F:/hdl_projects/rangefinder/rangefinder_v5/SIM/ch_recording_channel/recording_channel.v {1 {vlog -work altera_mf F:/hdl_projects/rangefinder/rangefinder_v5/SIM/ch_recording_channel/recording_channel.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module recording_channel
+
+Top level modules:
+	recording_channel
+
+} {} {}} F:/hdl_projects/rangefinder/rangefinder_v5/SIM/ch_recording_channel/adc_fifo_8x256_bb.v {1 {vlog -work altera_mf F:/hdl_projects/rangefinder/rangefinder_v5/SIM/ch_recording_channel/adc_fifo_8x256_bb.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module adc_fifo_8x256
+
+Top level modules:
+	adc_fifo_8x256
+
+} {} {}} F:/hdl_projects/rangefinder/rangefinder_v5/SIM/ch_recording_channel/adc_fifo_8x256.v {1 {vlog -work altera_mf F:/hdl_projects/rangefinder/rangefinder_v5/SIM/ch_recording_channel/adc_fifo_8x256.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module adc_fifo_8x256
+
+Top level modules:
+	adc_fifo_8x256
+
+} {} {}}

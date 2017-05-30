@@ -1,0 +1,2595 @@
+!SESSION 2016-05-27 12:35:40.500 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-27 12:36:37.086
+!MESSAGE Indexed 'rangefinder_v1_bsp' (83 sources, 105 headers) in 1,62 sec: 2 623 declarations; 4 398 references; 19 unresolved inclusions; 376 syntax errors; 206 unresolved names (2,85 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-27 12:36:37.416
+!MESSAGE Indexed 'rangefinder_v1' (0 sources, 13 headers) in 0,02 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 12:53:10.162
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 12:53:10.163
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 12:53:12.341
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.ui 4 4 2016-05-27 12:53:17.904
+!MESSAGE Exception in org.eclipse.ui.internal.PageLayout.stackView: org.eclipse.ui.PartInitException: Could not create view: org.eclipse.cdt.debug.ui.DisassemblyView
+
+!ENTRY org.eclipse.ui 4 4 2016-05-27 12:53:17.905
+!MESSAGE Exception in org.eclipse.ui.internal.PageLayout.stackView: org.eclipse.ui.PartInitException: Could not create view: org.eclipse.cdt.debug.ui.DisassemblyView
+!STACK 1
+org.eclipse.ui.PartInitException: Could not create view: org.eclipse.cdt.debug.ui.DisassemblyView
+	at org.eclipse.ui.internal.ViewFactory.createView(ViewFactory.java:158)
+	at org.eclipse.ui.internal.LayoutHelper.createView(LayoutHelper.java:162)
+	at org.eclipse.ui.internal.PageLayout.createView(PageLayout.java:554)
+	at org.eclipse.ui.internal.PageLayout.stackView(PageLayout.java:863)
+	at org.eclipse.ui.internal.registry.PerspectiveExtensionReader.processView(PerspectiveExtensionReader.java:270)
+	at org.eclipse.ui.internal.registry.PerspectiveExtensionReader.processExtension(PerspectiveExtensionReader.java:118)
+	at org.eclipse.ui.internal.registry.PerspectiveExtensionReader.readElement(PerspectiveExtensionReader.java:355)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:144)
+	at org.eclipse.ui.internal.registry.RegistryReader.readExtension(RegistryReader.java:155)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:176)
+	at org.eclipse.ui.internal.registry.PerspectiveExtensionReader.extendLayout(PerspectiveExtensionReader.java:82)
+	at org.eclipse.ui.internal.Perspective.loadPredefinedPersp(Perspective.java:818)
+	at org.eclipse.ui.internal.Perspective.createPresentation(Perspective.java:270)
+	at org.eclipse.ui.internal.Perspective.<init>(Perspective.java:156)
+	at org.eclipse.ui.internal.tweaklets.Workbench3xImplementation.createPerspective(Workbench3xImplementation.java:55)
+	at org.eclipse.ui.internal.WorkbenchPage.createPerspective(WorkbenchPage.java:1748)
+	at org.eclipse.ui.internal.WorkbenchPage.busySetPerspective(WorkbenchPage.java:1108)
+	at org.eclipse.ui.internal.WorkbenchPage.access$16(WorkbenchPage.java:1099)
+	at org.eclipse.ui.internal.WorkbenchPage$19.run(WorkbenchPage.java:3814)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:3812)
+	at org.eclipse.ui.internal.Workbench.showPerspective(Workbench.java:2875)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.switchToPerspective(PerspectiveManager.java:316)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager$4.runInUIThread(PerspectiveManager.java:395)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+!SUBENTRY 1 org.eclipse.ui 4 0 2016-05-27 12:53:17.906
+!MESSAGE Could not create view: org.eclipse.cdt.debug.ui.DisassemblyView
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-05-27 12:53:23.687
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 12:54:21.892
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 12:54:21.893
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 12:54:24.015
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 12:58:23.823
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 12:58:23.824
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 12:58:25.945
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 13:06:45.091
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 13:06:45.091
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 13:06:47.219
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 14:08:24.386
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:08:24.386
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:08:26.474
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 14:13:33.291
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:13:33.291
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:13:35.409
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 14:51:26.640
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:51:26.641
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:51:28.764
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 14:52:38.817
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:52:38.817
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:52:40.912
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 14:53:18.176
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:53:18.176
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:53:20.261
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 14:54:57.221
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:54:57.221
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:54:59.325
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 14:57:16.264
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:57:16.264
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 14:57:18.362
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:00:03.109
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:00:03.109
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:00:05.211
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:04:49.307
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:05:06.473
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:05:06.473
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:05:08.572
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:10:09.771
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:11:50.251
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:11:50.251
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:11:52.633
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:12:33.436
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:18:52.983
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:18:52.983
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:18:55.341
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:20:05.925
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:22:27.820
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:22:27.820
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:22:29.904
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:23:23.883
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:25:18.570
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:25:18.570
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:25:20.660
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:26:14.026
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:28:36.570
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:28:36.570
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:28:38.664
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:29:59.397
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:30:08.787
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:30:08.787
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:30:10.861
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:48:40.000
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:49:43.283
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:49:43.283
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:49:45.633
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:54:22.140
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:54:32.085
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:54:32.085
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:54:34.186
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:56:24.793
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:56:32.246
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:56:32.246
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:56:34.346
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 15:57:00.314
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 15:57:28.603
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:57:28.603
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 15:57:30.679
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:00:37.480
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 16:14:14.848
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:14:14.848
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:14:16.953
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:15:15.262
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 16:15:23.555
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:15:23.555
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:15:25.646
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:16:00.227
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 16:25:11.538
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:25:11.538
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:25:13.630
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:26:17.145
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 16:27:05.910
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:27:05.910
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:27:08.030
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:29:08.651
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 16:29:17.888
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:29:17.888
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:29:20.006
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:31:46.214
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 16:31:53.562
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:31:53.562
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:31:55.668
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-05-27 16:32:09.345
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: No registers.[No registers.]
+	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.update(RegisterManager.java:427)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:314)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:32:11.916
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 16:32:16.258
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:32:16.258
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:32:18.363
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:34:35.968
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 16:34:43.194
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:34:43.194
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:34:45.316
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:35:35.419
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 16:35:43.471
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:35:43.472
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 16:35:45.577
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 16:48:02.667
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 17:06:51.111
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 17:06:51.112
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 --timestamp=1464340304 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 17:06:53.317
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979 --timestamp=1464340304]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 17:17:16.149
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 17:46:47.022
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 17:46:47.022
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 17:46:49.067
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 17:47:05.383
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.193
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.193
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.194
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.194
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.194
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.195
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.195
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.195
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.196
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.196
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.196
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.197
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.197
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.197
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.198
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2016-05-27 17:47:55.199
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4140)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3757)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1926)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1517)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:107)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+!SESSION 2016-05-27 17:48:39.809 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 4 376 2016-05-27 18:09:13.151
+!MESSAGE Marker id 4126 not found.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 18:26:01.393
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:26:01.394
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:26:03.508
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-05-27 18:31:11.034
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 18:31:11.190
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 18:31:19.913
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:31:19.913
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:31:22.007
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 18:32:21.551
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 18:32:39.929
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:32:39.929
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:32:42.010
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 18:33:43.801
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 18:33:51.988
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:33:51.988
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:33:54.071
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 18:36:21.053
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-05-27 18:36:28.323
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:36:28.323
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-05-27 18:36:30.422
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-05-27 18:37:35.847
+!MESSAGE Inferior terminated
+!SESSION 2016-06-02 12:23:32.520 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-02 12:51:02.788
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 12:51:02.817
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 12:51:04.933
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-06-02 13:01:49.014
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 13:01:49.173
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-02 13:01:58.868
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 13:01:58.868
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 13:02:00.928
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 13:40:03.114
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-02 13:40:22.749
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 13:40:22.750
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 13:40:24.805
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 13:45:56.835
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-02 13:48:21.724
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 13:48:21.725
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 13:48:23.790
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 13:58:10.358
+!MESSAGE Inferior terminated
+!SESSION 2016-06-02 14:55:10.453 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-02 17:12:21.556
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 17:12:21.560
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 17:12:23.656
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:30:13.532
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:30:13.532
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-02 17:31:25.495
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 17:31:25.495
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 17:31:27.498
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:36:02.519
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:36:02.519
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:36:02.519
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-02 17:36:10.732
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 17:36:10.732
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 17:36:12.787
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:54:02.814
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:54:02.814
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:54:02.814
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-02 17:54:11.601
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 17:54:11.602
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/e/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v1/rangefinder_v1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-02 17:54:13.665
+!MESSAGE Executing: [E:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:56:00.679
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:56:00.679
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-02 17:56:00.679
+!MESSAGE Inferior terminated
+!SESSION 2016-06-03 16:51:36.014 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data D:\HDL_projects\Rangefinder_kit\SOFTWARE -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 4 567 2016-06-03 16:51:37.595
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-06-03 16:51:37.595
+!MESSAGE Could not read metadata for 'rangefinder_v1'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'rangefinder_v1' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:851)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:854)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:703)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2503)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2016-06-03 16:51:37.595
+!MESSAGE The project description file (.project) for 'rangefinder_v1' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-06-03 16:51:37.595
+!MESSAGE Could not read metadata for 'rangefinder_v1_bsp'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'rangefinder_v1_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:851)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:854)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:703)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2503)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2016-06-03 16:51:37.595
+!MESSAGE The project description file (.project) for 'rangefinder_v1_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SESSION 2016-06-03 16:53:50.496 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data D:\HDL_projects\Rangefinder_kit\SOFTWARE -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-06-03 16:55:29.350
+!MESSAGE Indexed 'rangefinder_v2_bsp' (83 sources, 63 headers) in 2,05 sec: 988 declarations; 2 483 references; 103 unresolved inclusions; 5 syntax errors; 198 unresolved names (5,40 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-06-03 16:55:34.851
+!MESSAGE Indexed 'rangefinder_v2' (0 sources, 13 headers) in 0,05 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-03 16:58:32.846
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 16:58:32.846
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 16:58:36.880
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-03 17:03:13.501
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-03 17:03:13.501
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-03 17:03:13.501
+!MESSAGE {R,T}xThread terminated
+!SESSION 2016-06-03 17:03:17.891 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-03 17:03:39.775
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 17:03:39.785
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 17:03:42.597
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+!SESSION 2016-06-03 17:19:23.431 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-03 17:19:49.954
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 17:19:49.964
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 17:19:52.767
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-06-03 17:21:17.868
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-03 17:21:43.176
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 17:21:43.176
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 17:21:46.148
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-06-03 17:22:39.413
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+!SESSION 2016-06-03 19:37:44.752 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-06-03 19:39:58.623
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 19:39:58.673
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9730 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-06-03 19:40:02.245
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9730 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-03 19:54:11.586
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-03 19:54:11.586
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-06-03 19:54:11.586
+!MESSAGE Inferior terminated
+!SESSION 2016-10-23 21:42:58.352 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-23 22:35:02.306
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-23 22:35:02.346
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-23 22:35:06.911
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-23 22:40:42.815
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-23 22:40:42.815
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-23 22:40:42.815
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-23 22:40:59.842
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-23 22:40:59.842
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-23 22:41:02.986
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-23 22:50:23.429
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-23 22:50:23.429
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-23 22:50:23.439
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-23 22:50:45.533
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-23 22:50:45.533
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-23 22:50:48.535
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-23 23:03:14.686
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-23 23:03:14.686
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-23 23:03:14.686
+!MESSAGE Inferior terminated
+!SESSION 2016-10-29 14:47:35.391 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 14:48:00.296
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 14:48:00.336
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 14:48:03.329
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:14:31.481
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:14:31.481
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:14:31.481
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 15:19:26.877
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:19:26.877
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:19:29.699
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:20:30.327
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:20:30.337
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:20:30.337
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 15:30:01.621
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:30:01.621
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:30:04.456
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-10-29 15:48:53.042
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:48:53.357
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:48:53.357
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:48:53.357
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 15:52:29.203
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:52:29.203
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:52:32.136
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 15:55:00.851
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:55:00.851
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:55:03.674
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 15:56:09.475
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 15:57:45.905
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:57:45.905
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 15:57:48.817
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:02:30.589
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 16:07:59.269
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:07:59.269
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:08:02.241
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-10-29 16:26:37.643
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:26:37.917
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:26:37.917
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:26:37.917
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 16:27:39.586
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:27:39.586
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:27:42.618
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:28:46.431
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:28:46.431
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:28:46.441
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 16:29:18.482
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:29:18.482
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:29:21.305
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:40:18.175
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:40:18.175
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:40:18.175
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 16:40:39.312
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:40:39.312
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:40:42.264
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:42:20.402
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:42:20.402
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:42:20.402
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 16:42:53.660
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:42:53.660
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:42:56.493
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:52:46.440
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:52:46.440
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:52:46.440
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 16:53:20.610
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:53:20.610
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:53:23.622
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:54:56.934
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:54:56.934
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 16:54:56.934
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 16:59:18.442
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:59:18.442
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 16:59:21.244
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:11:14.739
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:11:14.739
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:11:14.739
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 17:11:38.135
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 17:11:38.135
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9760 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 17:11:40.988
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9760 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:17:38.631
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:17:38.631
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:17:38.631
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 17:41:20.632
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 17:41:20.632
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 17:41:23.818
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:42:24.277
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:42:24.277
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:42:24.277
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 17:51:38.506
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 17:51:38.506
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 17:51:41.339
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:52:22.783
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:52:22.783
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 17:52:22.783
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 17:52:31.446
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 17:52:31.446
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 17:52:34.339
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-10-29 18:04:34.764
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: No registers.[No registers.]
+	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.update(RegisterManager.java:427)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:314)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:04:38.508
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:04:38.508
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:04:38.508
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:09:11.726
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:09:11.726
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:09:15.689
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-10-29 18:11:02.629
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: No registers.[No registers.]
+	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.update(RegisterManager.java:427)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:314)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:11:07.796
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:11:07.806
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:11:07.806
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:12:40.375
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:12:40.375
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:12:43.258
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:14:42.661
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:14:42.661
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:14:42.661
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:15:16.321
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:15:16.321
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:15:19.273
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-10-29 18:19:02.541
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:19:02.853
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:19:02.853
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:19:02.853
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:19:27.594
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:19:27.594
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:19:30.476
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:19:49.300
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:19:49.300
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:19:49.300
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:22:29.215
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:22:29.215
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:22:32.157
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:23:53.264
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:23:53.264
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:23:53.264
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:32:26.326
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:32:26.326
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:32:29.231
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:33:45.265
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:33:45.265
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:33:45.265
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:33:54.287
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:33:54.287
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:33:57.219
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:34:28.661
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:34:28.661
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:34:28.661
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:34:41.394
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:34:41.394
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:34:44.247
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:35:26.980
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:35:26.990
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:35:26.990
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:36:14.360
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:36:14.360
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:36:17.213
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:38:28.407
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:38:28.417
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:38:28.417
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:38:46.000
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:38:46.000
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:38:48.862
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:40:44.975
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:40:44.975
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 18:40:44.975
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:41:03.891
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:41:03.891
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:41:06.743
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 18:59:28.924
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:59:28.924
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 18:59:31.766
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:00:52.941
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:00:52.941
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:00:55.863
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:01:51.233
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:01:51.233
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:01:54.175
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:02:51.739
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:02:51.739
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:02:54.641
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:09:36.261
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:09:36.261
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:09:36.261
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:09:53.117
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:09:53.117
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:09:56.010
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:11:05.413
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:11:05.413
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:11:05.413
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:11:58.590
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:11:58.590
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:12:01.474
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:14:05.250
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:14:05.250
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:14:05.250
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:14:21.516
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:14:21.516
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:14:24.379
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:17:08.851
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:17:08.851
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:17:08.851
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:17:26.507
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:17:26.507
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:17:29.371
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:18:47.249
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:18:47.249
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:18:47.249
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:19:08.263
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:19:08.263
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:19:11.215
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2016-10-29 19:21:18.502
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:21:18.795
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:21:18.795
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:21:18.805
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:21:35.964
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:21:35.964
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:21:38.826
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:23:00.311
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:23:00.311
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:23:00.311
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:37:22.501
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:37:22.501
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:37:25.374
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:39:07.993
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:39:07.993
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:39:24.688
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:39:24.688
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:39:27.560
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:45:47.844
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 4 0 2016-10-29 19:51:31.667
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:51:31.667
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x9770 --id=0x13137979 /cygdrive/d/HDL_projects/Rangefinder_kit/QSYS/software/rangefinder_v2/rangefinder_v2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2016-10-29 19:51:34.550
+!MESSAGE Executing: [D:/altera/14.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x9770 --id=0x13137979]
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:54:55.992
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2016-10-29 19:54:55.992
+!MESSAGE Inferior terminated
+!SESSION 2017-04-13 12:30:33.737 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 4 567 2017-04-13 12:31:30.487
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2017-04-13 12:31:30.487
+!MESSAGE Could not read metadata for 'rangefinder_v2'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'rangefinder_v2' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:851)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:854)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:703)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2503)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2017-04-13 12:31:30.488
+!MESSAGE The project description file (.project) for 'rangefinder_v2' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2017-04-13 12:31:30.488
+!MESSAGE Could not read metadata for 'rangefinder_v2_bsp'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'rangefinder_v2_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:851)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:854)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:703)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2503)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2017-04-13 12:31:30.489
+!MESSAGE The project description file (.project) for 'rangefinder_v2_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 4 567 2017-04-13 12:32:32.742
+!MESSAGE The project description file (.project) for 'rangefinder_v2_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 4 567 2017-04-13 12:33:30.700
+!MESSAGE The project description file (.project) for 'rangefinder_v2' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.

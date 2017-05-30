@@ -1,0 +1,10 @@
+|cross_domain
+clk_a => ff_a.CLK
+clk_a => pulse_a1.CLK
+pulse_a => pulse_a_posedge.IN1
+pulse_a => pulse_a1.DATAIN
+clk_b => pulse_b~reg0.CLK
+clk_b => ff_b.CLK
+pulse_b <= pulse_b~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

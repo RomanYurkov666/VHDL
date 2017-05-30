@@ -1,0 +1,130 @@
+`timescale 1ns/100ps
+module tb_laser_dr();
+
+reg av_clk;
+reg av_reset;
+reg av_cs;
+reg [2:0] av_addr;
+reg av_write;
+reg [31:0] av_writedata;
+wire driver_out;
+reg [7:0] cnt;
+reg comparator;
+wire eq;
+reg driver_out1;
+reg ref_clk;
+initial
+begin
+ av_clk=1;
+ av_reset=1;
+ av_cs=0;
+ av_addr=0;
+ av_write=0;
+ av_writedata=0;
+ cnt=0;
+ comparator=0;
+ driver_out1=0;
+ ref_clk=1;
+ #100
+	 av_reset<=0;
+ #500
+     av_cs<=1;
+	 av_addr<=3'd03;
+	 av_write<=1;
+	 av_writedata<=3; //delay
+ #10
+	 av_addr<=3'd02;
+	 av_writedata<=10; //length
+ #10 
+     av_addr<=3'd04;
+	 av_writedata<=5; //back delay
+ #10 
+     av_cs<=0;
+	 av_addr<=3'd0;
+	 av_write<=0;
+ #10
+     av_cs<=1;
+	 av_write<=1;
+	 av_addr<=3'd0;
+	 av_writedata<=3'b001;
+ #10 
+     av_cs<=0;
+	 av_addr<=3'd0;
+	 av_write<=0;
+ #500
+     av_cs<=1;
+	 av_write<=1;
+	 av_addr<=3'd0;
+	 av_writedata<=3'b011;	 
+ #10 
+     av_cs<=0;
+	 av_addr<=3'd0;
+	 av_write<=0;
+ #500
+     av_cs<=1;
+	 av_write<=1;
+	 av_addr<=3'd0;
+	 av_writedata<=3'b101;	 
+ #10 
+     av_cs<=0;
+	 av_addr<=3'd0;
+	 av_write<=0;
+ #500
+     av_cs<=1;
+	 av_write<=1;
+	 av_addr<=3'd0;
+	 av_writedata<=3'b111;	 
+ #10 
+     av_cs<=0;
+	 av_addr<=3'd0;
+	 av_write<=0;
+end 
+
+always #5 av_clk<=~av_clk; //Формирование клока
+always #4 ref_clk<=~ref_clk; //Формирование клока
+
+always@ (posedge driver_out)
+         #130 begin
+		     comparator<=1;
+		     #24
+			 comparator<=0;
+			 end
+			 
+always@ (posedge av_clk)
+driver_out1<=driver_out;
+//initial #1000 $finish;
+
+/*
+laser_driver dr
+(
+.reset(0),          //global reset
+.laser_en(driver_out),  //driver to laser
+.comparator(comparator),     // signal from first comparator (start pulse)
+//avalon mm slave (to CPU)
+.avmms_clk(av_clk),   
+.avmms_reset(av_reset),
+.avmms_cs(av_cs),
+.avmms_addr(av_addr),
+.avmms_write(av_write),
+.avmms_writedata(av_writedata)
+//.avmms_read(),
+//.avmms_readdata()
+);*/
+
+laser_driver driver 
+(
+.ref_clk(ref_clk), 
+.driver_mod_en(1),
+.laser_en(driver_out),
+.comparator(comparator), 
+.avmms_clk(av_clk),
+.avmms_reset(av_reset),
+.avmms_cs(av_cs),
+.avmms_address(av_addr),
+.avmms_write(av_write),
+.avmms_writedata(av_writedata)//,
+//.avmms_read(),
+//.avmms_readdata()
+);
+
+endmodule 

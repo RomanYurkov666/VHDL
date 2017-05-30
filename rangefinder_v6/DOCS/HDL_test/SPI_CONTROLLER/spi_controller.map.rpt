@@ -1,0 +1,411 @@
+Analysis & Synthesis report for spi_controller
+Sun Oct 23 01:49:33 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |spi_controller|state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Oct 23 01:49:33 2016        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; spi_controller                               ;
+; Top-level Entity Name              ; spi_controller                               ;
+; Family                             ; Cyclone III                                  ;
+; Total logic elements               ; 1                                            ;
+;     Total combinational functions  ; 0                                            ;
+;     Dedicated logic registers      ; 1                                            ;
+; Total registers                    ; 1                                            ;
+; Total pins                         ; 89                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; spi_controller     ; spi_controller     ;
+; Family name                                                                ; Cyclone III        ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++-------------------------------------+-----------------+------------------------+------------------------------------------------------------+
+; File Name with User-Entered Path    ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ;
++-------------------------------------+-----------------+------------------------+------------------------------------------------------------+
+; ../../../HDL/spi_clk_cs_generator.v ; yes             ; User Verilog HDL File  ; D:/HDL_projects/Rangefinder_kit/HDL/spi_clk_cs_generator.v ;
+; ../../../HDL/spi_clk_divider.v      ; yes             ; User Verilog HDL File  ; D:/HDL_projects/Rangefinder_kit/HDL/spi_clk_divider.v      ;
+; ../../../HDL/spi_controller.v       ; yes             ; User Verilog HDL File  ; D:/HDL_projects/Rangefinder_kit/HDL/spi_controller.v       ;
+; ../../../HDL/spi_rx_shifter.v       ; yes             ; User Verilog HDL File  ; D:/HDL_projects/Rangefinder_kit/HDL/spi_rx_shifter.v       ;
+; ../../../HDL/spi_tx_sifter.v        ; yes             ; User Verilog HDL File  ; D:/HDL_projects/Rangefinder_kit/HDL/spi_tx_sifter.v        ;
++-------------------------------------+-----------------+------------------------+------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                   ;
++---------------------------------------------+---------------------------------+
+; Resource                                    ; Usage                           ;
++---------------------------------------------+---------------------------------+
+; Estimated Total logic elements              ; 1                               ;
+;                                             ;                                 ;
+; Total combinational functions               ; 0                               ;
+; Logic element usage by number of LUT inputs ;                                 ;
+;     -- 4 input functions                    ; 0                               ;
+;     -- 3 input functions                    ; 0                               ;
+;     -- <=2 input functions                  ; 0                               ;
+;                                             ;                                 ;
+; Logic elements by mode                      ;                                 ;
+;     -- normal mode                          ; 0                               ;
+;     -- arithmetic mode                      ; 0                               ;
+;                                             ;                                 ;
+; Total registers                             ; 1                               ;
+;     -- Dedicated logic registers            ; 1                               ;
+;     -- I/O registers                        ; 0                               ;
+;                                             ;                                 ;
+; I/O pins                                    ; 89                              ;
+; Maximum fan-out node                        ; spi_clk_cs_generator:u3|spi_clk ;
+; Maximum fan-out                             ; 1                               ;
+; Total fan-out                               ; 92                              ;
+; Average fan-out                             ; 0.51                            ;
++---------------------------------------------+---------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                               ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
+; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
+; |spi_controller              ; 0 (0)             ; 1 (0)        ; 0           ; 0            ; 0       ; 0         ; 89   ; 0            ; |spi_controller                         ; work         ;
+;    |spi_clk_cs_generator:u3| ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |spi_controller|spi_clk_cs_generator:u3 ;              ;
++------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------+
+; State Machine - |spi_controller|state                                                                              ;
++----------------------+----------------------+---------------+-----------------+---------------+--------------------+
+; Name                 ; state.ST_TRANSACTION ; state.ST_WAIT ; state.ST_CONFIG ; state.ST_IDLE ; state.ST_READ_DATA ;
++----------------------+----------------------+---------------+-----------------+---------------+--------------------+
+; state.ST_IDLE        ; 0                    ; 0             ; 0               ; 0             ; 0                  ;
+; state.ST_CONFIG      ; 0                    ; 0             ; 1               ; 1             ; 0                  ;
+; state.ST_WAIT        ; 0                    ; 1             ; 0               ; 1             ; 0                  ;
+; state.ST_TRANSACTION ; 1                    ; 0             ; 0               ; 1             ; 0                  ;
+; state.ST_READ_DATA   ; 0                    ; 0             ; 0               ; 1             ; 1                  ;
++----------------------+----------------------+---------------+-----------------+---------------+--------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++----------------------------------------------+----------------------------------------+
+; Register name                                ; Reason for Removal                     ;
++----------------------------------------------+----------------------------------------+
+; spi_rx_shifter:u2|rx_shifter[0..30]          ; Stuck at GND due to stuck port data_in ;
+; spi_clk_cs_generator:u3|transaction_active   ; Stuck at GND due to stuck port data_in ;
+; spi_clk_cs_generator:u3|spi_cs               ; Stuck at VCC due to stuck port data_in ;
+; spi_clk_cs_generator:u3|spi_cycle_cntr[0..7] ; Stuck at GND due to stuck port data_in ;
+; spi_rx_shifter:u2|rx_shifter[31]             ; Stuck at GND due to stuck port data_in ;
+; spi_tx_shifter:u1|tx_shifter[32]             ; Stuck at GND due to stuck port data_in ;
+; state~2                                      ; Lost fanout                            ;
+; state~3                                      ; Lost fanout                            ;
+; spi_clk_divider:u0|divider_cntr[0..7]        ; Lost fanout                            ;
+; state.ST_READ_DATA                           ; Lost fanout                            ;
+; state.ST_IDLE                                ; Lost fanout                            ;
+; state.ST_CONFIG                              ; Lost fanout                            ;
+; state.ST_WAIT                                ; Lost fanout                            ;
+; state.ST_TRANSACTION                         ; Lost fanout                            ;
+; Total Number of Removed Registers = 58       ;                                        ;
++----------------------------------------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                        ;
++--------------------------------------------+---------------------------+-------------------------------------------+
+; Register name                              ; Reason for Removal        ; Registers Removed due to This Register    ;
++--------------------------------------------+---------------------------+-------------------------------------------+
+; spi_clk_cs_generator:u3|transaction_active ; Stuck at GND              ; spi_clk_cs_generator:u3|spi_cycle_cntr[7] ;
+;                                            ; due to stuck port data_in ;                                           ;
++--------------------------------------------+---------------------------+-------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Oct 23 01:49:31 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off spi_controller -c spi_controller
+Info: Found 1 design units, including 1 entities, in source file /hdl_projects/rangefinder_kit/hdl/spi_clk_cs_generator.v
+    Info: Found entity 1: spi_clk_cs_generator
+Info: Found 1 design units, including 1 entities, in source file /hdl_projects/rangefinder_kit/hdl/spi_clk_divider.v
+    Info: Found entity 1: spi_clk_divider
+Info: Found 1 design units, including 1 entities, in source file /hdl_projects/rangefinder_kit/hdl/spi_controller.v
+    Info: Found entity 1: spi_controller
+Info: Found 1 design units, including 1 entities, in source file /hdl_projects/rangefinder_kit/hdl/spi_rx_shifter.v
+    Info: Found entity 1: spi_rx_shifter
+Info: Found 1 design units, including 1 entities, in source file /hdl_projects/rangefinder_kit/hdl/spi_tx_sifter.v
+    Info: Found entity 1: spi_tx_shifter
+Info: Elaborating entity "spi_controller" for the top level hierarchy
+Info: Elaborating entity "spi_clk_divider" for hierarchy "spi_clk_divider:u0"
+Warning (10230): Verilog HDL assignment warning at spi_clk_divider.v(18): truncated value with size 32 to match size of target (8)
+Info: Elaborating entity "spi_tx_shifter" for hierarchy "spi_tx_shifter:u1"
+Info: Elaborating entity "spi_rx_shifter" for hierarchy "spi_rx_shifter:u2"
+Info: Elaborating entity "spi_clk_cs_generator" for hierarchy "spi_clk_cs_generator:u3"
+Warning (10230): Verilog HDL assignment warning at spi_clk_cs_generator.v(28): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at spi_clk_cs_generator.v(29): truncated value with size 33 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at spi_clk_cs_generator.v(46): truncated value with size 32 to match size of target (8)
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "receiver_data[0]" is stuck at GND
+    Warning (13410): Pin "receiver_data[1]" is stuck at GND
+    Warning (13410): Pin "receiver_data[2]" is stuck at GND
+    Warning (13410): Pin "receiver_data[3]" is stuck at GND
+    Warning (13410): Pin "receiver_data[4]" is stuck at GND
+    Warning (13410): Pin "receiver_data[5]" is stuck at GND
+    Warning (13410): Pin "receiver_data[6]" is stuck at GND
+    Warning (13410): Pin "receiver_data[7]" is stuck at GND
+    Warning (13410): Pin "receiver_data[8]" is stuck at GND
+    Warning (13410): Pin "receiver_data[9]" is stuck at GND
+    Warning (13410): Pin "receiver_data[10]" is stuck at GND
+    Warning (13410): Pin "receiver_data[11]" is stuck at GND
+    Warning (13410): Pin "receiver_data[12]" is stuck at GND
+    Warning (13410): Pin "receiver_data[13]" is stuck at GND
+    Warning (13410): Pin "receiver_data[14]" is stuck at GND
+    Warning (13410): Pin "receiver_data[15]" is stuck at GND
+    Warning (13410): Pin "receiver_data[16]" is stuck at GND
+    Warning (13410): Pin "receiver_data[17]" is stuck at GND
+    Warning (13410): Pin "receiver_data[18]" is stuck at GND
+    Warning (13410): Pin "receiver_data[19]" is stuck at GND
+    Warning (13410): Pin "receiver_data[20]" is stuck at GND
+    Warning (13410): Pin "receiver_data[21]" is stuck at GND
+    Warning (13410): Pin "receiver_data[22]" is stuck at GND
+    Warning (13410): Pin "receiver_data[23]" is stuck at GND
+    Warning (13410): Pin "receiver_data[24]" is stuck at GND
+    Warning (13410): Pin "receiver_data[25]" is stuck at GND
+    Warning (13410): Pin "receiver_data[26]" is stuck at GND
+    Warning (13410): Pin "receiver_data[27]" is stuck at GND
+    Warning (13410): Pin "receiver_data[28]" is stuck at GND
+    Warning (13410): Pin "receiver_data[29]" is stuck at GND
+    Warning (13410): Pin "receiver_data[30]" is stuck at GND
+    Warning (13410): Pin "receiver_data[31]" is stuck at GND
+    Warning (13410): Pin "spi_cs_n" is stuck at VCC
+    Warning (13410): Pin "spi_mosi" is stuck at GND
+Info: Timing-Driven Synthesis is running
+Info: 15 registers lost all their fanouts during netlist optimizations. The first 15 are displayed below.
+    Info: Register "state~2" lost all its fanouts during netlist optimizations.
+    Info: Register "state~3" lost all its fanouts during netlist optimizations.
+    Info: Register "spi_clk_divider:u0|divider_cntr[7]" lost all its fanouts during netlist optimizations.
+    Info: Register "spi_clk_divider:u0|divider_cntr[6]" lost all its fanouts during netlist optimizations.
+    Info: Register "spi_clk_divider:u0|divider_cntr[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "spi_clk_divider:u0|divider_cntr[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "spi_clk_divider:u0|divider_cntr[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "spi_clk_divider:u0|divider_cntr[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "spi_clk_divider:u0|divider_cntr[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "spi_clk_divider:u0|divider_cntr[0]" lost all its fanouts during netlist optimizations.
+    Info: Register "state.ST_READ_DATA" lost all its fanouts during netlist optimizations.
+    Info: Register "state.ST_IDLE" lost all its fanouts during netlist optimizations.
+    Info: Register "state.ST_CONFIG" lost all its fanouts during netlist optimizations.
+    Info: Register "state.ST_WAIT" lost all its fanouts during netlist optimizations.
+    Info: Register "state.ST_TRANSACTION" lost all its fanouts during netlist optimizations.
+Warning: Design contains 52 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "spi_data_length[7]"
+    Warning (15610): No output dependent on input pin "transmitter_data[0]"
+    Warning (15610): No output dependent on input pin "transmitter_data[1]"
+    Warning (15610): No output dependent on input pin "transmitter_data[2]"
+    Warning (15610): No output dependent on input pin "transmitter_data[3]"
+    Warning (15610): No output dependent on input pin "transmitter_data[4]"
+    Warning (15610): No output dependent on input pin "transmitter_data[5]"
+    Warning (15610): No output dependent on input pin "transmitter_data[6]"
+    Warning (15610): No output dependent on input pin "transmitter_data[7]"
+    Warning (15610): No output dependent on input pin "transmitter_data[8]"
+    Warning (15610): No output dependent on input pin "transmitter_data[9]"
+    Warning (15610): No output dependent on input pin "transmitter_data[10]"
+    Warning (15610): No output dependent on input pin "transmitter_data[11]"
+    Warning (15610): No output dependent on input pin "transmitter_data[12]"
+    Warning (15610): No output dependent on input pin "transmitter_data[13]"
+    Warning (15610): No output dependent on input pin "transmitter_data[14]"
+    Warning (15610): No output dependent on input pin "transmitter_data[15]"
+    Warning (15610): No output dependent on input pin "transmitter_data[16]"
+    Warning (15610): No output dependent on input pin "transmitter_data[17]"
+    Warning (15610): No output dependent on input pin "transmitter_data[18]"
+    Warning (15610): No output dependent on input pin "transmitter_data[19]"
+    Warning (15610): No output dependent on input pin "transmitter_data[20]"
+    Warning (15610): No output dependent on input pin "transmitter_data[21]"
+    Warning (15610): No output dependent on input pin "transmitter_data[22]"
+    Warning (15610): No output dependent on input pin "transmitter_data[23]"
+    Warning (15610): No output dependent on input pin "transmitter_data[24]"
+    Warning (15610): No output dependent on input pin "transmitter_data[25]"
+    Warning (15610): No output dependent on input pin "transmitter_data[26]"
+    Warning (15610): No output dependent on input pin "transmitter_data[27]"
+    Warning (15610): No output dependent on input pin "transmitter_data[28]"
+    Warning (15610): No output dependent on input pin "transmitter_data[29]"
+    Warning (15610): No output dependent on input pin "transmitter_data[30]"
+    Warning (15610): No output dependent on input pin "transmitter_data[31]"
+    Warning (15610): No output dependent on input pin "spi_miso"
+    Warning (15610): No output dependent on input pin "start"
+    Warning (15610): No output dependent on input pin "avmm_reset"
+    Warning (15610): No output dependent on input pin "clock_divider[7]"
+    Warning (15610): No output dependent on input pin "clock_divider[6]"
+    Warning (15610): No output dependent on input pin "clock_divider[5]"
+    Warning (15610): No output dependent on input pin "clock_divider[4]"
+    Warning (15610): No output dependent on input pin "clock_divider[3]"
+    Warning (15610): No output dependent on input pin "clock_divider[2]"
+    Warning (15610): No output dependent on input pin "clock_divider[1]"
+    Warning (15610): No output dependent on input pin "clock_divider[0]"
+    Warning (15610): No output dependent on input pin "spi_data_length[0]"
+    Warning (15610): No output dependent on input pin "clock_phase"
+    Warning (15610): No output dependent on input pin "spi_data_length[1]"
+    Warning (15610): No output dependent on input pin "spi_data_length[2]"
+    Warning (15610): No output dependent on input pin "spi_data_length[3]"
+    Warning (15610): No output dependent on input pin "spi_data_length[4]"
+    Warning (15610): No output dependent on input pin "spi_data_length[5]"
+    Warning (15610): No output dependent on input pin "spi_data_length[6]"
+Info: Implemented 90 device resources after synthesis - the final resource count might be different
+    Info: Implemented 54 input pins
+    Info: Implemented 35 output pins
+    Info: Implemented 1 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 92 warnings
+    Info: Peak virtual memory: 207 megabytes
+    Info: Processing ended: Sun Oct 23 01:49:33 2016
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

@@ -1,0 +1,439 @@
+Simulator report for spi_controller
+Sun Oct 23 01:59:05 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 ms       ;
+; Simulation Netlist Size     ; 180 nodes    ;
+; Simulation Coverage         ;       2.34 % ;
+; Total Number of Transitions ; 19999        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C5F256C6  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       2.34 % ;
+; Total nodes checked                                 ; 180          ;
+; Total output ports checked                          ; 128          ;
+; Total output ports with complete 1/0-value coverage ; 3            ;
+; Total output ports with no 1/0-value coverage       ; 124          ;
+; Total output ports with no 1-value coverage         ; 125          ;
+; Total output ports with no 0-value coverage         ; 124          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                        ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |spi_controller|start          ; |spi_controller|start          ; padout           ;
+; |spi_controller|avmm_clk~input ; |spi_controller|avmm_clk~input ; o                ;
+; |spi_controller|avmm_clk       ; |spi_controller|avmm_clk       ; padout           ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                           ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; Node Name                                              ; Output Port Name                                       ; Output Port Type ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; |spi_controller|spi_clk_cs_generator:u3|spi_clk        ; |spi_controller|spi_clk_cs_generator:u3|spi_clk        ; q                ;
+; |spi_controller|spi_data_length[7]                     ; |spi_controller|spi_data_length[7]                     ; padout           ;
+; |spi_controller|transmitter_data[0]                    ; |spi_controller|transmitter_data[0]                    ; padout           ;
+; |spi_controller|transmitter_data[1]                    ; |spi_controller|transmitter_data[1]                    ; padout           ;
+; |spi_controller|transmitter_data[2]                    ; |spi_controller|transmitter_data[2]                    ; padout           ;
+; |spi_controller|transmitter_data[3]                    ; |spi_controller|transmitter_data[3]                    ; padout           ;
+; |spi_controller|transmitter_data[4]                    ; |spi_controller|transmitter_data[4]                    ; padout           ;
+; |spi_controller|transmitter_data[5]                    ; |spi_controller|transmitter_data[5]                    ; padout           ;
+; |spi_controller|transmitter_data[6]                    ; |spi_controller|transmitter_data[6]                    ; padout           ;
+; |spi_controller|transmitter_data[7]                    ; |spi_controller|transmitter_data[7]                    ; padout           ;
+; |spi_controller|transmitter_data[8]                    ; |spi_controller|transmitter_data[8]                    ; padout           ;
+; |spi_controller|transmitter_data[9]                    ; |spi_controller|transmitter_data[9]                    ; padout           ;
+; |spi_controller|transmitter_data[10]                   ; |spi_controller|transmitter_data[10]                   ; padout           ;
+; |spi_controller|transmitter_data[11]                   ; |spi_controller|transmitter_data[11]                   ; padout           ;
+; |spi_controller|transmitter_data[12]                   ; |spi_controller|transmitter_data[12]                   ; padout           ;
+; |spi_controller|transmitter_data[13]                   ; |spi_controller|transmitter_data[13]                   ; padout           ;
+; |spi_controller|transmitter_data[14]                   ; |spi_controller|transmitter_data[14]                   ; padout           ;
+; |spi_controller|transmitter_data[15]                   ; |spi_controller|transmitter_data[15]                   ; padout           ;
+; |spi_controller|transmitter_data[16]                   ; |spi_controller|transmitter_data[16]                   ; padout           ;
+; |spi_controller|transmitter_data[17]                   ; |spi_controller|transmitter_data[17]                   ; padout           ;
+; |spi_controller|transmitter_data[18]                   ; |spi_controller|transmitter_data[18]                   ; padout           ;
+; |spi_controller|transmitter_data[19]                   ; |spi_controller|transmitter_data[19]                   ; padout           ;
+; |spi_controller|transmitter_data[20]                   ; |spi_controller|transmitter_data[20]                   ; padout           ;
+; |spi_controller|transmitter_data[21]                   ; |spi_controller|transmitter_data[21]                   ; padout           ;
+; |spi_controller|transmitter_data[22]                   ; |spi_controller|transmitter_data[22]                   ; padout           ;
+; |spi_controller|transmitter_data[23]                   ; |spi_controller|transmitter_data[23]                   ; padout           ;
+; |spi_controller|transmitter_data[24]                   ; |spi_controller|transmitter_data[24]                   ; padout           ;
+; |spi_controller|transmitter_data[25]                   ; |spi_controller|transmitter_data[25]                   ; padout           ;
+; |spi_controller|transmitter_data[26]                   ; |spi_controller|transmitter_data[26]                   ; padout           ;
+; |spi_controller|transmitter_data[27]                   ; |spi_controller|transmitter_data[27]                   ; padout           ;
+; |spi_controller|transmitter_data[28]                   ; |spi_controller|transmitter_data[28]                   ; padout           ;
+; |spi_controller|transmitter_data[29]                   ; |spi_controller|transmitter_data[29]                   ; padout           ;
+; |spi_controller|transmitter_data[30]                   ; |spi_controller|transmitter_data[30]                   ; padout           ;
+; |spi_controller|transmitter_data[31]                   ; |spi_controller|transmitter_data[31]                   ; padout           ;
+; |spi_controller|receiver_data[0]~output                ; |spi_controller|receiver_data[0]~output                ; o                ;
+; |spi_controller|receiver_data[0]                       ; |spi_controller|receiver_data[0]                       ; padout           ;
+; |spi_controller|receiver_data[1]~output                ; |spi_controller|receiver_data[1]~output                ; o                ;
+; |spi_controller|receiver_data[1]                       ; |spi_controller|receiver_data[1]                       ; padout           ;
+; |spi_controller|receiver_data[2]~output                ; |spi_controller|receiver_data[2]~output                ; o                ;
+; |spi_controller|receiver_data[2]                       ; |spi_controller|receiver_data[2]                       ; padout           ;
+; |spi_controller|receiver_data[3]~output                ; |spi_controller|receiver_data[3]~output                ; o                ;
+; |spi_controller|receiver_data[3]                       ; |spi_controller|receiver_data[3]                       ; padout           ;
+; |spi_controller|receiver_data[4]~output                ; |spi_controller|receiver_data[4]~output                ; o                ;
+; |spi_controller|receiver_data[4]                       ; |spi_controller|receiver_data[4]                       ; padout           ;
+; |spi_controller|receiver_data[5]~output                ; |spi_controller|receiver_data[5]~output                ; o                ;
+; |spi_controller|receiver_data[5]                       ; |spi_controller|receiver_data[5]                       ; padout           ;
+; |spi_controller|receiver_data[6]~output                ; |spi_controller|receiver_data[6]~output                ; o                ;
+; |spi_controller|receiver_data[6]                       ; |spi_controller|receiver_data[6]                       ; padout           ;
+; |spi_controller|receiver_data[7]~output                ; |spi_controller|receiver_data[7]~output                ; o                ;
+; |spi_controller|receiver_data[7]                       ; |spi_controller|receiver_data[7]                       ; padout           ;
+; |spi_controller|receiver_data[8]~output                ; |spi_controller|receiver_data[8]~output                ; o                ;
+; |spi_controller|receiver_data[8]                       ; |spi_controller|receiver_data[8]                       ; padout           ;
+; |spi_controller|receiver_data[9]~output                ; |spi_controller|receiver_data[9]~output                ; o                ;
+; |spi_controller|receiver_data[9]                       ; |spi_controller|receiver_data[9]                       ; padout           ;
+; |spi_controller|receiver_data[10]~output               ; |spi_controller|receiver_data[10]~output               ; o                ;
+; |spi_controller|receiver_data[10]                      ; |spi_controller|receiver_data[10]                      ; padout           ;
+; |spi_controller|receiver_data[11]~output               ; |spi_controller|receiver_data[11]~output               ; o                ;
+; |spi_controller|receiver_data[11]                      ; |spi_controller|receiver_data[11]                      ; padout           ;
+; |spi_controller|receiver_data[12]~output               ; |spi_controller|receiver_data[12]~output               ; o                ;
+; |spi_controller|receiver_data[12]                      ; |spi_controller|receiver_data[12]                      ; padout           ;
+; |spi_controller|receiver_data[13]~output               ; |spi_controller|receiver_data[13]~output               ; o                ;
+; |spi_controller|receiver_data[13]                      ; |spi_controller|receiver_data[13]                      ; padout           ;
+; |spi_controller|receiver_data[14]~output               ; |spi_controller|receiver_data[14]~output               ; o                ;
+; |spi_controller|receiver_data[14]                      ; |spi_controller|receiver_data[14]                      ; padout           ;
+; |spi_controller|receiver_data[15]~output               ; |spi_controller|receiver_data[15]~output               ; o                ;
+; |spi_controller|receiver_data[15]                      ; |spi_controller|receiver_data[15]                      ; padout           ;
+; |spi_controller|receiver_data[16]~output               ; |spi_controller|receiver_data[16]~output               ; o                ;
+; |spi_controller|receiver_data[16]                      ; |spi_controller|receiver_data[16]                      ; padout           ;
+; |spi_controller|receiver_data[17]~output               ; |spi_controller|receiver_data[17]~output               ; o                ;
+; |spi_controller|receiver_data[17]                      ; |spi_controller|receiver_data[17]                      ; padout           ;
+; |spi_controller|receiver_data[18]~output               ; |spi_controller|receiver_data[18]~output               ; o                ;
+; |spi_controller|receiver_data[18]                      ; |spi_controller|receiver_data[18]                      ; padout           ;
+; |spi_controller|receiver_data[19]~output               ; |spi_controller|receiver_data[19]~output               ; o                ;
+; |spi_controller|receiver_data[19]                      ; |spi_controller|receiver_data[19]                      ; padout           ;
+; |spi_controller|receiver_data[20]~output               ; |spi_controller|receiver_data[20]~output               ; o                ;
+; |spi_controller|receiver_data[20]                      ; |spi_controller|receiver_data[20]                      ; padout           ;
+; |spi_controller|receiver_data[21]~output               ; |spi_controller|receiver_data[21]~output               ; o                ;
+; |spi_controller|receiver_data[21]                      ; |spi_controller|receiver_data[21]                      ; padout           ;
+; |spi_controller|receiver_data[22]~output               ; |spi_controller|receiver_data[22]~output               ; o                ;
+; |spi_controller|receiver_data[22]                      ; |spi_controller|receiver_data[22]                      ; padout           ;
+; |spi_controller|receiver_data[23]~output               ; |spi_controller|receiver_data[23]~output               ; o                ;
+; |spi_controller|receiver_data[23]                      ; |spi_controller|receiver_data[23]                      ; padout           ;
+; |spi_controller|receiver_data[24]~output               ; |spi_controller|receiver_data[24]~output               ; o                ;
+; |spi_controller|receiver_data[24]                      ; |spi_controller|receiver_data[24]                      ; padout           ;
+; |spi_controller|receiver_data[25]~output               ; |spi_controller|receiver_data[25]~output               ; o                ;
+; |spi_controller|receiver_data[25]                      ; |spi_controller|receiver_data[25]                      ; padout           ;
+; |spi_controller|receiver_data[26]~output               ; |spi_controller|receiver_data[26]~output               ; o                ;
+; |spi_controller|receiver_data[26]                      ; |spi_controller|receiver_data[26]                      ; padout           ;
+; |spi_controller|receiver_data[27]~output               ; |spi_controller|receiver_data[27]~output               ; o                ;
+; |spi_controller|receiver_data[27]                      ; |spi_controller|receiver_data[27]                      ; padout           ;
+; |spi_controller|receiver_data[28]~output               ; |spi_controller|receiver_data[28]~output               ; o                ;
+; |spi_controller|receiver_data[28]                      ; |spi_controller|receiver_data[28]                      ; padout           ;
+; |spi_controller|receiver_data[29]~output               ; |spi_controller|receiver_data[29]~output               ; o                ;
+; |spi_controller|receiver_data[29]                      ; |spi_controller|receiver_data[29]                      ; padout           ;
+; |spi_controller|receiver_data[30]~output               ; |spi_controller|receiver_data[30]~output               ; o                ;
+; |spi_controller|receiver_data[30]                      ; |spi_controller|receiver_data[30]                      ; padout           ;
+; |spi_controller|receiver_data[31]~output               ; |spi_controller|receiver_data[31]~output               ; o                ;
+; |spi_controller|receiver_data[31]                      ; |spi_controller|receiver_data[31]                      ; padout           ;
+; |spi_controller|spi_clk~output                         ; |spi_controller|spi_clk~output                         ; o                ;
+; |spi_controller|spi_clk                                ; |spi_controller|spi_clk                                ; padout           ;
+; |spi_controller|spi_cs_n~output                        ; |spi_controller|spi_cs_n~output                        ; o                ;
+; |spi_controller|spi_cs_n                               ; |spi_controller|spi_cs_n                               ; padout           ;
+; |spi_controller|spi_mosi~output                        ; |spi_controller|spi_mosi~output                        ; o                ;
+; |spi_controller|spi_mosi                               ; |spi_controller|spi_mosi                               ; padout           ;
+; |spi_controller|spi_miso                               ; |spi_controller|spi_miso                               ; padout           ;
+; |spi_controller|avmm_reset                             ; |spi_controller|avmm_reset                             ; padout           ;
+; |spi_controller|clock_divider[7]                       ; |spi_controller|clock_divider[7]                       ; padout           ;
+; |spi_controller|clock_divider[6]                       ; |spi_controller|clock_divider[6]                       ; padout           ;
+; |spi_controller|clock_divider[5]                       ; |spi_controller|clock_divider[5]                       ; padout           ;
+; |spi_controller|clock_divider[4]                       ; |spi_controller|clock_divider[4]                       ; padout           ;
+; |spi_controller|clock_divider[3]                       ; |spi_controller|clock_divider[3]                       ; padout           ;
+; |spi_controller|clock_divider[2]                       ; |spi_controller|clock_divider[2]                       ; padout           ;
+; |spi_controller|clock_divider[1]                       ; |spi_controller|clock_divider[1]                       ; padout           ;
+; |spi_controller|clock_divider[0]                       ; |spi_controller|clock_divider[0]                       ; padout           ;
+; |spi_controller|spi_data_length[0]                     ; |spi_controller|spi_data_length[0]                     ; padout           ;
+; |spi_controller|clock_phase                            ; |spi_controller|clock_phase                            ; padout           ;
+; |spi_controller|spi_data_length[1]                     ; |spi_controller|spi_data_length[1]                     ; padout           ;
+; |spi_controller|spi_data_length[2]                     ; |spi_controller|spi_data_length[2]                     ; padout           ;
+; |spi_controller|spi_data_length[3]                     ; |spi_controller|spi_data_length[3]                     ; padout           ;
+; |spi_controller|spi_data_length[4]                     ; |spi_controller|spi_data_length[4]                     ; padout           ;
+; |spi_controller|spi_data_length[5]                     ; |spi_controller|spi_data_length[5]                     ; padout           ;
+; |spi_controller|spi_data_length[6]                     ; |spi_controller|spi_data_length[6]                     ; padout           ;
+; |spi_controller|clock_polarity~input                   ; |spi_controller|clock_polarity~input                   ; o                ;
+; |spi_controller|clock_polarity                         ; |spi_controller|clock_polarity                         ; padout           ;
+; |spi_controller|spi_clk_cs_generator:u3|spi_clk~feeder ; |spi_controller|spi_clk_cs_generator:u3|spi_clk~feeder ; combout          ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                           ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; Node Name                                              ; Output Port Name                                       ; Output Port Type ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; |spi_controller|spi_clk_cs_generator:u3|spi_clk        ; |spi_controller|spi_clk_cs_generator:u3|spi_clk        ; q                ;
+; |spi_controller|spi_data_length[7]                     ; |spi_controller|spi_data_length[7]                     ; padout           ;
+; |spi_controller|transmitter_data[0]                    ; |spi_controller|transmitter_data[0]                    ; padout           ;
+; |spi_controller|transmitter_data[1]                    ; |spi_controller|transmitter_data[1]                    ; padout           ;
+; |spi_controller|transmitter_data[2]                    ; |spi_controller|transmitter_data[2]                    ; padout           ;
+; |spi_controller|transmitter_data[3]                    ; |spi_controller|transmitter_data[3]                    ; padout           ;
+; |spi_controller|transmitter_data[4]                    ; |spi_controller|transmitter_data[4]                    ; padout           ;
+; |spi_controller|transmitter_data[5]                    ; |spi_controller|transmitter_data[5]                    ; padout           ;
+; |spi_controller|transmitter_data[6]                    ; |spi_controller|transmitter_data[6]                    ; padout           ;
+; |spi_controller|transmitter_data[7]                    ; |spi_controller|transmitter_data[7]                    ; padout           ;
+; |spi_controller|transmitter_data[8]                    ; |spi_controller|transmitter_data[8]                    ; padout           ;
+; |spi_controller|transmitter_data[9]                    ; |spi_controller|transmitter_data[9]                    ; padout           ;
+; |spi_controller|transmitter_data[10]                   ; |spi_controller|transmitter_data[10]                   ; padout           ;
+; |spi_controller|transmitter_data[11]                   ; |spi_controller|transmitter_data[11]                   ; padout           ;
+; |spi_controller|transmitter_data[12]                   ; |spi_controller|transmitter_data[12]                   ; padout           ;
+; |spi_controller|transmitter_data[13]                   ; |spi_controller|transmitter_data[13]                   ; padout           ;
+; |spi_controller|transmitter_data[14]                   ; |spi_controller|transmitter_data[14]                   ; padout           ;
+; |spi_controller|transmitter_data[15]                   ; |spi_controller|transmitter_data[15]                   ; padout           ;
+; |spi_controller|transmitter_data[16]                   ; |spi_controller|transmitter_data[16]                   ; padout           ;
+; |spi_controller|transmitter_data[17]                   ; |spi_controller|transmitter_data[17]                   ; padout           ;
+; |spi_controller|transmitter_data[18]                   ; |spi_controller|transmitter_data[18]                   ; padout           ;
+; |spi_controller|transmitter_data[19]                   ; |spi_controller|transmitter_data[19]                   ; padout           ;
+; |spi_controller|transmitter_data[20]                   ; |spi_controller|transmitter_data[20]                   ; padout           ;
+; |spi_controller|transmitter_data[21]                   ; |spi_controller|transmitter_data[21]                   ; padout           ;
+; |spi_controller|transmitter_data[22]                   ; |spi_controller|transmitter_data[22]                   ; padout           ;
+; |spi_controller|transmitter_data[23]                   ; |spi_controller|transmitter_data[23]                   ; padout           ;
+; |spi_controller|transmitter_data[24]                   ; |spi_controller|transmitter_data[24]                   ; padout           ;
+; |spi_controller|transmitter_data[25]                   ; |spi_controller|transmitter_data[25]                   ; padout           ;
+; |spi_controller|transmitter_data[26]                   ; |spi_controller|transmitter_data[26]                   ; padout           ;
+; |spi_controller|transmitter_data[27]                   ; |spi_controller|transmitter_data[27]                   ; padout           ;
+; |spi_controller|transmitter_data[28]                   ; |spi_controller|transmitter_data[28]                   ; padout           ;
+; |spi_controller|transmitter_data[29]                   ; |spi_controller|transmitter_data[29]                   ; padout           ;
+; |spi_controller|transmitter_data[30]                   ; |spi_controller|transmitter_data[30]                   ; padout           ;
+; |spi_controller|transmitter_data[31]                   ; |spi_controller|transmitter_data[31]                   ; padout           ;
+; |spi_controller|receiver_data[0]~output                ; |spi_controller|receiver_data[0]~output                ; o                ;
+; |spi_controller|receiver_data[0]                       ; |spi_controller|receiver_data[0]                       ; padout           ;
+; |spi_controller|receiver_data[1]~output                ; |spi_controller|receiver_data[1]~output                ; o                ;
+; |spi_controller|receiver_data[1]                       ; |spi_controller|receiver_data[1]                       ; padout           ;
+; |spi_controller|receiver_data[2]~output                ; |spi_controller|receiver_data[2]~output                ; o                ;
+; |spi_controller|receiver_data[2]                       ; |spi_controller|receiver_data[2]                       ; padout           ;
+; |spi_controller|receiver_data[3]~output                ; |spi_controller|receiver_data[3]~output                ; o                ;
+; |spi_controller|receiver_data[3]                       ; |spi_controller|receiver_data[3]                       ; padout           ;
+; |spi_controller|receiver_data[4]~output                ; |spi_controller|receiver_data[4]~output                ; o                ;
+; |spi_controller|receiver_data[4]                       ; |spi_controller|receiver_data[4]                       ; padout           ;
+; |spi_controller|receiver_data[5]~output                ; |spi_controller|receiver_data[5]~output                ; o                ;
+; |spi_controller|receiver_data[5]                       ; |spi_controller|receiver_data[5]                       ; padout           ;
+; |spi_controller|receiver_data[6]~output                ; |spi_controller|receiver_data[6]~output                ; o                ;
+; |spi_controller|receiver_data[6]                       ; |spi_controller|receiver_data[6]                       ; padout           ;
+; |spi_controller|receiver_data[7]~output                ; |spi_controller|receiver_data[7]~output                ; o                ;
+; |spi_controller|receiver_data[7]                       ; |spi_controller|receiver_data[7]                       ; padout           ;
+; |spi_controller|receiver_data[8]~output                ; |spi_controller|receiver_data[8]~output                ; o                ;
+; |spi_controller|receiver_data[8]                       ; |spi_controller|receiver_data[8]                       ; padout           ;
+; |spi_controller|receiver_data[9]~output                ; |spi_controller|receiver_data[9]~output                ; o                ;
+; |spi_controller|receiver_data[9]                       ; |spi_controller|receiver_data[9]                       ; padout           ;
+; |spi_controller|receiver_data[10]~output               ; |spi_controller|receiver_data[10]~output               ; o                ;
+; |spi_controller|receiver_data[10]                      ; |spi_controller|receiver_data[10]                      ; padout           ;
+; |spi_controller|receiver_data[11]~output               ; |spi_controller|receiver_data[11]~output               ; o                ;
+; |spi_controller|receiver_data[11]                      ; |spi_controller|receiver_data[11]                      ; padout           ;
+; |spi_controller|receiver_data[12]~output               ; |spi_controller|receiver_data[12]~output               ; o                ;
+; |spi_controller|receiver_data[12]                      ; |spi_controller|receiver_data[12]                      ; padout           ;
+; |spi_controller|receiver_data[13]~output               ; |spi_controller|receiver_data[13]~output               ; o                ;
+; |spi_controller|receiver_data[13]                      ; |spi_controller|receiver_data[13]                      ; padout           ;
+; |spi_controller|receiver_data[14]~output               ; |spi_controller|receiver_data[14]~output               ; o                ;
+; |spi_controller|receiver_data[14]                      ; |spi_controller|receiver_data[14]                      ; padout           ;
+; |spi_controller|receiver_data[15]~output               ; |spi_controller|receiver_data[15]~output               ; o                ;
+; |spi_controller|receiver_data[15]                      ; |spi_controller|receiver_data[15]                      ; padout           ;
+; |spi_controller|receiver_data[16]~output               ; |spi_controller|receiver_data[16]~output               ; o                ;
+; |spi_controller|receiver_data[16]                      ; |spi_controller|receiver_data[16]                      ; padout           ;
+; |spi_controller|receiver_data[17]~output               ; |spi_controller|receiver_data[17]~output               ; o                ;
+; |spi_controller|receiver_data[17]                      ; |spi_controller|receiver_data[17]                      ; padout           ;
+; |spi_controller|receiver_data[18]~output               ; |spi_controller|receiver_data[18]~output               ; o                ;
+; |spi_controller|receiver_data[18]                      ; |spi_controller|receiver_data[18]                      ; padout           ;
+; |spi_controller|receiver_data[19]~output               ; |spi_controller|receiver_data[19]~output               ; o                ;
+; |spi_controller|receiver_data[19]                      ; |spi_controller|receiver_data[19]                      ; padout           ;
+; |spi_controller|receiver_data[20]~output               ; |spi_controller|receiver_data[20]~output               ; o                ;
+; |spi_controller|receiver_data[20]                      ; |spi_controller|receiver_data[20]                      ; padout           ;
+; |spi_controller|receiver_data[21]~output               ; |spi_controller|receiver_data[21]~output               ; o                ;
+; |spi_controller|receiver_data[21]                      ; |spi_controller|receiver_data[21]                      ; padout           ;
+; |spi_controller|receiver_data[22]~output               ; |spi_controller|receiver_data[22]~output               ; o                ;
+; |spi_controller|receiver_data[22]                      ; |spi_controller|receiver_data[22]                      ; padout           ;
+; |spi_controller|receiver_data[23]~output               ; |spi_controller|receiver_data[23]~output               ; o                ;
+; |spi_controller|receiver_data[23]                      ; |spi_controller|receiver_data[23]                      ; padout           ;
+; |spi_controller|receiver_data[24]~output               ; |spi_controller|receiver_data[24]~output               ; o                ;
+; |spi_controller|receiver_data[24]                      ; |spi_controller|receiver_data[24]                      ; padout           ;
+; |spi_controller|receiver_data[25]~output               ; |spi_controller|receiver_data[25]~output               ; o                ;
+; |spi_controller|receiver_data[25]                      ; |spi_controller|receiver_data[25]                      ; padout           ;
+; |spi_controller|receiver_data[26]~output               ; |spi_controller|receiver_data[26]~output               ; o                ;
+; |spi_controller|receiver_data[26]                      ; |spi_controller|receiver_data[26]                      ; padout           ;
+; |spi_controller|receiver_data[27]~output               ; |spi_controller|receiver_data[27]~output               ; o                ;
+; |spi_controller|receiver_data[27]                      ; |spi_controller|receiver_data[27]                      ; padout           ;
+; |spi_controller|receiver_data[28]~output               ; |spi_controller|receiver_data[28]~output               ; o                ;
+; |spi_controller|receiver_data[28]                      ; |spi_controller|receiver_data[28]                      ; padout           ;
+; |spi_controller|receiver_data[29]~output               ; |spi_controller|receiver_data[29]~output               ; o                ;
+; |spi_controller|receiver_data[29]                      ; |spi_controller|receiver_data[29]                      ; padout           ;
+; |spi_controller|receiver_data[30]~output               ; |spi_controller|receiver_data[30]~output               ; o                ;
+; |spi_controller|receiver_data[30]                      ; |spi_controller|receiver_data[30]                      ; padout           ;
+; |spi_controller|receiver_data[31]~output               ; |spi_controller|receiver_data[31]~output               ; o                ;
+; |spi_controller|receiver_data[31]                      ; |spi_controller|receiver_data[31]                      ; padout           ;
+; |spi_controller|spi_clk~output                         ; |spi_controller|spi_clk~output                         ; o                ;
+; |spi_controller|spi_clk                                ; |spi_controller|spi_clk                                ; padout           ;
+; |spi_controller|spi_cs_n~output                        ; |spi_controller|spi_cs_n~output                        ; o                ;
+; |spi_controller|spi_cs_n                               ; |spi_controller|spi_cs_n                               ; padout           ;
+; |spi_controller|spi_mosi~output                        ; |spi_controller|spi_mosi~output                        ; o                ;
+; |spi_controller|spi_mosi                               ; |spi_controller|spi_mosi                               ; padout           ;
+; |spi_controller|spi_miso                               ; |spi_controller|spi_miso                               ; padout           ;
+; |spi_controller|clock_divider[7]                       ; |spi_controller|clock_divider[7]                       ; padout           ;
+; |spi_controller|clock_divider[6]                       ; |spi_controller|clock_divider[6]                       ; padout           ;
+; |spi_controller|clock_divider[5]                       ; |spi_controller|clock_divider[5]                       ; padout           ;
+; |spi_controller|clock_divider[4]                       ; |spi_controller|clock_divider[4]                       ; padout           ;
+; |spi_controller|clock_divider[3]                       ; |spi_controller|clock_divider[3]                       ; padout           ;
+; |spi_controller|clock_divider[2]                       ; |spi_controller|clock_divider[2]                       ; padout           ;
+; |spi_controller|clock_divider[1]                       ; |spi_controller|clock_divider[1]                       ; padout           ;
+; |spi_controller|clock_divider[0]                       ; |spi_controller|clock_divider[0]                       ; padout           ;
+; |spi_controller|spi_data_length[0]                     ; |spi_controller|spi_data_length[0]                     ; padout           ;
+; |spi_controller|clock_phase                            ; |spi_controller|clock_phase                            ; padout           ;
+; |spi_controller|spi_data_length[1]                     ; |spi_controller|spi_data_length[1]                     ; padout           ;
+; |spi_controller|spi_data_length[2]                     ; |spi_controller|spi_data_length[2]                     ; padout           ;
+; |spi_controller|spi_data_length[3]                     ; |spi_controller|spi_data_length[3]                     ; padout           ;
+; |spi_controller|spi_data_length[4]                     ; |spi_controller|spi_data_length[4]                     ; padout           ;
+; |spi_controller|spi_data_length[5]                     ; |spi_controller|spi_data_length[5]                     ; padout           ;
+; |spi_controller|spi_data_length[6]                     ; |spi_controller|spi_data_length[6]                     ; padout           ;
+; |spi_controller|clock_polarity~input                   ; |spi_controller|clock_polarity~input                   ; o                ;
+; |spi_controller|clock_polarity                         ; |spi_controller|clock_polarity                         ; padout           ;
+; |spi_controller|spi_clk_cs_generator:u3|spi_clk~feeder ; |spi_controller|spi_clk_cs_generator:u3|spi_clk~feeder ; combout          ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Oct 23 01:59:03 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off spi_controller -c spi_controller
+Info: Using vector source file "D:/HDL_projects/Rangefinder_kit/DOCS/HDL_test/SPI_CONTROLLER/spi_controller.vwf"
+Warning: Can't display state machine states -- register holding state machine bit "|spi_controller|state.ST_TRANSACTION" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|spi_controller|state.ST_WAIT" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|spi_controller|state.ST_CONFIG" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|spi_controller|state.ST_IDLE" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|spi_controller|state.ST_READ_DATA" was synthesized away
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|clk" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|reset" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider_cntr[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider_cntr[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider_cntr[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider_cntr[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider_cntr[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider_cntr[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider_cntr[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|divider_cntr[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "spi_clk_divider:u0|slow_clk_en" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       2.34 %
+Info: Number of transitions in simulation is 19999
+Info: Quartus II Simulator was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 155 megabytes
+    Info: Processing ended: Sun Oct 23 01:59:05 2016
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

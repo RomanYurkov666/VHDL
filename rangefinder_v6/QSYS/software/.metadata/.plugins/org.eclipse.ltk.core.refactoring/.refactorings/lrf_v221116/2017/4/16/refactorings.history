@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;lrf_v221116/iris.c&apos; to &apos;motors.c&apos;" description="Rename resource &apos;iris.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="iris.c" name="motors.c" stamp="1492160724140" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;lrf_v221116/iris.h&apos; to &apos;motors.h&apos;" description="Rename resource &apos;iris.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="iris.h" name="motors.h" stamp="1492160735961" updateReferences="true"/>
+</session>
